@@ -1,7 +1,7 @@
 # work_week6
 
 ## 進入頁面
-https://kaiyuncheng.github.io/week_6_router/
+https://kaiyuncheng.github.io/week_6_work/
 
 ## Project setup
 ```

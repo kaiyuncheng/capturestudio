@@ -57,8 +57,8 @@ export default {
       this.$http
         .post(api, this.user)
         .then((res) => {
-          const { token } = res.data.token;
-          const { expired } = res.data.expired;
+          const { token } = res.data;
+          const { expired } = res.data;
           // 寫入 cookie token
           // expires 設置有效時間
           document.cookie = `token=${token};expires=${new Date(expired * 1000)};`;

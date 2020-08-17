@@ -1,5 +1,8 @@
 # work_week6
 
+## 進入頁面
+https://kaiyuncheng.github.io/week_6_router/
+
 ## Project setup
 ```
 npm install

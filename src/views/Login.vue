@@ -64,8 +64,8 @@ export default {
           document.cookie = `token=${token};expires=${new Date(expired * 1000)};`;
           this.$router.push('/admin/products');
         })
-        .catch((error) => {
-          console.log(error);
+        .catch((err) => {
+          console.log(err);
         });
     },
 

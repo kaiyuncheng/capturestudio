@@ -80,7 +80,7 @@
       }, T.extend({
         Deferred(e) {
           const t = [['notify', 'progress', T.Callbacks('memory'), T.Callbacks('memory'), 2], ['resolve', 'done', T.Callbacks('once memory'), T.Callbacks('once memory'), 0, 'resolved'], ['reject', 'fail', T.Callbacks('once memory'), T.Callbacks('once memory'), 1, 'rejected']]; let r = 'pending'; var o = {
-            state() { return r; }, always() { return i.done(arguments).fail(arguments), this; }, catch(e) { return o.then(null, e); }, pipe() { let e = arguments; return T.Deferred(((n) => { T.each(t, ((t, r) => { let o = g(e[r[4]]) && e[r[4]]; i[r[1]]((function () { let e = o && o.apply(this, arguments); e && g(e.promise) ? e.promise().progress(n.notify).done(n.resolve).fail(n.reject) : n[`${r[0]}With`](this, o ? [e] : arguments); })); })), e = null; })).promise(); }, then(e, r, o) { let i = 0; function a(e, t, r, o) { return function () { let s = this; let u = arguments; const c = function () { let n; let c; if (!(e < i)) { if (n = r.apply(s, u), n === t.promise()) throw new TypeError('Thenable self-resolution'); c = n && (typeof n === 'object' || typeof n === 'function') && n.then, g(c) ? o ? c.call(n, a(i, t, B, o), a(i, t, U, o)) : (i++, c.call(n, a(i, t, B, o), a(i, t, U, o), a(i, t, B, t.notifyWith))) : (r !== B && (s = void 0, u = [n]), (o || t.resolveWith)(s, u)); } }; var l = o ? c : function () { try { c(); } catch (n) { T.Deferred.exceptionHook && T.Deferred.exceptionHook(n, l.stackTrace), e + 1 >= i && (r !== U && (s = void 0, u = [n]), t.rejectWith(s, u)); } }; e ? l() : (T.Deferred.getStackHook && (l.stackTrace = T.Deferred.getStackHook()), n.setTimeout(l)); }; } return T.Deferred(((n) => { t[0][3].add(a(0, n, g(o) ? o : B, n.notifyWith)), t[1][3].add(a(0, n, g(e) ? e : B)), t[2][3].add(a(0, n, g(r) ? r : U)); })).promise(); }, promise(e) { return e != null ? T.extend(e, o) : o; },
+            state() { return r; }, always() { return i.done(arguments).fail(arguments), this; }, catch(e) { return o.then(null, e); }, pipe() { let e = arguments; return T.Deferred(((n) => { T.each(t, ((t, r) => { const o = g(e[r[4]]) && e[r[4]]; i[r[1]]((function () { const e = o && o.apply(this, arguments); e && g(e.promise) ? e.promise().progress(n.notify).done(n.resolve).fail(n.reject) : n[`${r[0]}With`](this, o ? [e] : arguments); })); })), e = null; })).promise(); }, then(e, r, o) { let i = 0; function a(e, t, r, o) { return function () { let s = this; let u = arguments; const c = function () { let n; let c; if (!(e < i)) { if (n = r.apply(s, u), n === t.promise()) throw new TypeError('Thenable self-resolution'); c = n && (typeof n === 'object' || typeof n === 'function') && n.then, g(c) ? o ? c.call(n, a(i, t, B, o), a(i, t, U, o)) : (i++, c.call(n, a(i, t, B, o), a(i, t, U, o), a(i, t, B, t.notifyWith))) : (r !== B && (s = void 0, u = [n]), (o || t.resolveWith)(s, u)); } }; var l = o ? c : function () { try { c(); } catch (n) { T.Deferred.exceptionHook && T.Deferred.exceptionHook(n, l.stackTrace), e + 1 >= i && (r !== U && (s = void 0, u = [n]), t.rejectWith(s, u)); } }; e ? l() : (T.Deferred.getStackHook && (l.stackTrace = T.Deferred.getStackHook()), n.setTimeout(l)); }; } return T.Deferred(((n) => { t[0][3].add(a(0, n, g(o) ? o : B, n.notifyWith)), t[1][3].add(a(0, n, g(e) ? e : B)), t[2][3].add(a(0, n, g(r) ? r : U)); })).promise(); }, promise(e) { return e != null ? T.extend(e, o) : o; },
           }; var i = {}; return T.each(t, ((e, n) => { const a = n[2]; const s = n[5]; o[n[1]] = a.add, s && a.add((() => { r = s; }), t[3 - e][2].disable, t[3 - e][3].disable, t[0][2].lock, t[0][3].lock), a.add(n[3].fire), i[n[0]] = function () { return i[`${n[0]}With`](this === i ? void 0 : this, arguments), this; }, i[`${n[0]}With`] = a.fireWith; })), o.promise(i), e && e.call(i, i), i;
         },
         when(e) { let t = arguments.length; let n = t; const r = Array(n); const o = u.call(arguments); const i = T.Deferred(); const a = function (e) { return function (n) { r[e] = this, o[e] = arguments.length > 1 ? u.call(arguments) : n, --t || i.resolveWith(r, o); }; }; if (t <= 1 && (z(e, i.done(a(n)).resolve, i.reject, !t), i.state() === 'pending' || g(o[n] && o[n].then))) return i.then(); while (n--)z(o[n], a(n), i.reject); return i.promise(); },
@@ -499,77 +499,77 @@
         const e = this.$createElement; const t = this._self._c || e; return t('svg', {
           attrs: {
             viewBox: '0 0 120 30', xmlns: 'http://www.w3.org/2000/svg', fill: this.color, width: this.width, height: this.height,
-          }, 
+          },
         }, [t('circle', { attrs: { cx: '15', cy: '15', r: '15' } }, [t('animate', {
           attrs: {
             attributeName: 'r', from: '15', to: '15', begin: '0s', dur: '0.8s', values: '15;9;15', calcMode: 'linear', repeatCount: 'indefinite',
-          }, 
+          },
         }), t('animate', {
           attrs: {
             attributeName: 'fill-opacity', from: '1', to: '1', begin: '0s', dur: '0.8s', values: '1;.5;1', calcMode: 'linear', repeatCount: 'indefinite',
-          }, 
+          },
         })]), t('circle', {
           attrs: {
             cx: '60', cy: '15', r: '9', 'fill-opacity': '0.3',
-          }, 
+          },
         }, [t('animate', {
           attrs: {
             attributeName: 'r', from: '9', to: '9', begin: '0s', dur: '0.8s', values: '9;15;9', calcMode: 'linear', repeatCount: 'indefinite',
-          }, 
+          },
         }), t('animate', {
           attrs: {
             attributeName: 'fill-opacity', from: '0.5', to: '0.5', begin: '0s', dur: '0.8s', values: '.5;1;.5', calcMode: 'linear', repeatCount: 'indefinite',
-          }, 
+          },
         })]), t('circle', { attrs: { cx: '105', cy: '15', r: '15' } }, [t('animate', {
           attrs: {
             attributeName: 'r', from: '15', to: '15', begin: '0s', dur: '0.8s', values: '15;9;15', calcMode: 'linear', repeatCount: 'indefinite',
-          }, 
+          },
         }), t('animate', {
           attrs: {
             attributeName: 'fill-opacity', from: '1', to: '1', begin: '0s', dur: '0.8s', values: '1;.5;1', calcMode: 'linear', repeatCount: 'indefinite',
-          }, 
+          },
         })])]);
       }), [], !1, null, null, null).exports; const u = i({ name: 'bars', props: { color: { type: String, default: '#000' }, height: { type: Number, default: 40 }, width: { type: Number, default: 40 } } }, (function () {
         const e = this.$createElement; const t = this._self._c || e; return t('svg', {
           attrs: {
             xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 30 30', height: this.height, width: this.width, fill: this.color,
-          }, 
+          },
         }, [t('rect', {
           attrs: {
             x: '0', y: '13', width: '4', height: '5',
-          }, 
+          },
         }, [t('animate', {
           attrs: {
             attributeName: 'height', attributeType: 'XML', values: '5;21;5', begin: '0s', dur: '0.6s', repeatCount: 'indefinite',
-          }, 
+          },
         }), t('animate', {
           attrs: {
             attributeName: 'y', attributeType: 'XML', values: '13; 5; 13', begin: '0s', dur: '0.6s', repeatCount: 'indefinite',
-          }, 
+          },
         })]), t('rect', {
           attrs: {
             x: '10', y: '13', width: '4', height: '5',
-          }, 
+          },
         }, [t('animate', {
           attrs: {
             attributeName: 'height', attributeType: 'XML', values: '5;21;5', begin: '0.15s', dur: '0.6s', repeatCount: 'indefinite',
-          }, 
+          },
         }), t('animate', {
           attrs: {
             attributeName: 'y', attributeType: 'XML', values: '13; 5; 13', begin: '0.15s', dur: '0.6s', repeatCount: 'indefinite',
-          }, 
+          },
         })]), t('rect', {
           attrs: {
             x: '20', y: '13', width: '4', height: '5',
-          }, 
+          },
         }, [t('animate', {
           attrs: {
             attributeName: 'height', attributeType: 'XML', values: '5;21;5', begin: '0.3s', dur: '0.6s', repeatCount: 'indefinite',
-          }, 
+          },
         }), t('animate', {
           attrs: {
             attributeName: 'y', attributeType: 'XML', values: '13; 5; 13', begin: '0.3s', dur: '0.6s', repeatCount: 'indefinite',
-          }, 
+          },
         })])]);
       }), [], !1, null, null, null).exports; const c = i({
         name: 'vue-loading',

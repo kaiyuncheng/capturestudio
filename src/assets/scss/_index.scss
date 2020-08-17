@@ -1,0 +1,52 @@
+.menu__bar {
+  background-color: #fff;
+  padding: 0 20px;
+  color: $color-primary;
+  
+  
+  .social__icons,
+  .logo,
+  .search {
+    flex: 1;
+    align-items: flex-end;
+  }
+
+  li{
+    margin: 0 10px 15px 10px;
+    font-size: 1.1rem;
+  }
+
+}
+
+.nav__bar {
+  border-top: 1px dashed $color-light;
+  border-bottom: 1px dashed $color-light;
+  background-color: #fff;
+  
+}
+
+.menu__bar a,
+.nav__bar a {
+  color: $color-primary;
+  &:hover{
+    color:darken($color-primary, 15%)
+  }
+}
+
+.logo a{
+    width: 120px;
+    height: 120px;
+    background: url(./assets/capture_logo.png) no-repeat;
+    background-size: contain;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card_badge{
+  font-size: 0.8rem;
+}
+
+.main__slide{
+  margin-top: 200px;
+}

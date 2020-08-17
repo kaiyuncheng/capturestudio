@@ -1,0 +1,21 @@
+$color-primary:#704E00;
+$color-secondary: #bbb6ab;
+$color-dark: #3e3e3e;
+$color-light: #cccccc;
+$color-black: #000000;
+$color-white: #ffffff;
+
+body {
+  font-family: 'Raleway', 'Lora', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: $color-dark;
+}
+

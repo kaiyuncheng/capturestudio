@@ -1,0 +1,21 @@
+/* Login Page */
+
+.login{
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=password]:focus,
+input[type=email]:focus{
+border: 2px solid #704E00;
+}
+
+.form-sign-in{
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto; 
+}

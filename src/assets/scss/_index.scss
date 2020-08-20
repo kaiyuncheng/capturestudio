@@ -28,7 +28,9 @@
 .menu__bar a,
 .nav__bar a {
   color: $color-primary;
-  &:hover{
+  &:hover,
+  &:active,
+  &:focus {
     color:darken($color-primary, 15%)
   }
 }

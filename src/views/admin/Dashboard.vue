@@ -43,6 +43,7 @@ export default {
       checkSuccess: false,
     };
   },
+
   created() {
     this.checkLogin();
   },
@@ -54,8 +55,9 @@ export default {
       this.$http.defaults.headers.common.Authorization = `Bearer ${this.token}`;
       const api = `${process.env.VUE_APP_APIPATH}auth/check`;
 
-      // eslint-disable-next-line
-      this.$http.post(api, { 'api_token': this.token })
+      this.$http
+        // eslint-disable-next-line
+        .post(api, { 'api_token': this.token })
         .then((res) => {
         // 登入沒有問題
           console.log(res);
@@ -64,10 +66,11 @@ export default {
           }
         })
         .catch((err) => {
-          console.log(err, '錯誤');
+          console.log('錯誤', err);
           this.$router.push('/login');
         });
     },
+
     signout() {
       document.cookie = 'token=;expires=;';
       console.log('token 已清除');

@@ -1,6 +1,9 @@
 # work_week6
 
-## 進入頁面
+## WEEK7 後台管理
+https://kaiyuncheng.github.io/week_6_work/#/login
+
+## WEEK6
 https://kaiyuncheng.github.io/week_6_work/
 
 ## Project setup

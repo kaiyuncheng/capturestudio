@@ -29,15 +29,15 @@ Vue.config.productionTip = false;
 window.$ = $;
 Vue.use(VueAxios, axios);
 
-Vue.use(Loading);
-Vue.component('Loading', Loading);
-
 // Bus
 // Message
 // vm.$bus.$emit('message:push', message, status);
 // message(String): 訊息內容
 // status(String): Alert 的樣式
 Vue.prototype.$bus = new Vue();
+
+Vue.use(Loading);
+Vue.component('Loading', Loading);
 
 // vee-validate
 Object.keys(rules).forEach((rule) => {

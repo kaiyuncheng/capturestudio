@@ -1,5 +1,5 @@
 <template>
   <div class="admin__settings">
-    <h2>這裡是設定頁</h2>
+    <h2>SETTINGS</h2>
   </div>
 </template>

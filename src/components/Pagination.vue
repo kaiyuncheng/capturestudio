@@ -34,10 +34,9 @@
         >
           <a
             class="page-link"
-            href="#"
             aria-label="Next"
-
             @click.prevent="emitPages(pages.current_page + 1)"
+            href="#"
           >
             <span aria-hidden="true">&raquo;</span>
             <span class="sr-only">Next</span>
@@ -66,7 +65,7 @@ export default {
   },
   methods: {
     emitPages(item) {
-      this.$emit('emitPages', item);
+      this.$emit('emit-pages', item);
     },
   },
 };

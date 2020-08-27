@@ -53,6 +53,7 @@ export default {
   },
   methods: {
     signin() {
+      this.isLoading = true;
       const api = `${process.env.VUE_APP_APIPATH}auth/login`;
       this.$http
         .post(api, this.user)
@@ -62,10 +63,18 @@ export default {
           // 寫入 cookie token
           // expires 設置有效時間
           document.cookie = `token=${token};expires=${new Date(expired * 1000)};`;
+          this.isLoading = false;
+          this.$bus.$emit('message:push',
+            'Sign in successful.',
+            'success');
           this.$router.push('/admin/products');
         })
         .catch((err) => {
-          console.log(err);
+          this.$bus.$emit('message:push',
+            `Sign in failed.
+            ${err}`, 'danger');
+
+          this.isLoading = false;
         });
     },
 

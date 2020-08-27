@@ -96,14 +96,10 @@
               </div>
               <div class="form-group">
                   <label for="content">Content</label>
-                  <textarea
+                  <vue-editor
                     id="content"
                     v-model="tempProduct.content"
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter content"
-                  >
-                  </textarea>
+                  />
               </div>
               <div class="form-group">
                   <div class="form-check">
@@ -113,7 +109,7 @@
                       class="form-check-input"
                       type="checkbox"
                     />
-                    <label class="form-check-label" for="is_enabled">Enabled?</label>
+                    <label class="form-check-label" for="enabled">Enabled?</label>
                   </div>
               </div>
             </div>
@@ -160,8 +156,13 @@
 </template>
 
 <script>
+import { VueEditor } from 'vue2-editor/dist/vue2-editor.core';
+
 export default {
   name: 'ProductModal',
+  components: {
+    VueEditor,
+  },
   data() {
     return {};
   },
@@ -183,3 +184,11 @@ export default {
   },
 };
 </script>
+<style lang="css">
+@import '~vue2-editor/dist/vue2-editor.css';
+
+/* Import the Quill styles you want */
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+</style>

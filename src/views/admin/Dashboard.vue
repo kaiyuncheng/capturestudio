@@ -4,19 +4,20 @@
 
     <div class="menu__bar d-flex justify-content-center pt-4">
         <ul class="social__icons d-flex flex-row">
-          <li><i class="far fa-user"></i> 後台管理 Dashboard</li>
+          <li><i class="far fa-user"></i> ADMIN DASHBOARD</li>
         </ul>
         <div class="logo d-flex justify-content-center">
           <h1><router-link to="/">Capture Studio</router-link></h1>
         </div>
         <ul class="search d-flex justify-content-end">
           <li><router-link to="/">
-            <i class="fas fa-arrow-circle-left"></i> 回前台</router-link></li>
-          <li><router-link to="/admin/settings"><i class="fas fas fa-cog"></i> 設定</router-link></li>
+            <i class="fas fa-arrow-circle-left"></i> Back</router-link></li>
+          <li><router-link to="/admin/settings">
+            <i class="fas fas fa-cog"></i> Settings</router-link></li>
           <li>
-            <router-link to="/" @click.prevent="signout">
-              <i class="fas fa-sign-out-alt"></i> 登出
-            </router-link>
+            <a herf="#" @click.prevent="signOut">
+              <i class="fas fa-sign-out-alt"></i> Sign Out
+            </a>
           </li>
         </ul>
     </div>
@@ -25,8 +26,13 @@
         <ul class="d-flex justify-content-center">
           <li class="menu_item m-3"><router-link to="/admin/products">Products</router-link></li>
           <li class="menu_item m-3"><router-link to="/admin/coupons">Coupons</router-link></li>
+          <li class="menu_item m-3"><router-link to="/admin/storages">Storages</router-link></li>
           <li class="menu_item m-3"><router-link to="/admin/orders">Orders</router-link></li>
-          <li class="menu_item m-3"><router-link to="/admin/images">Images</router-link></li>
+          <li class="menu_item m-3">
+            <router-link to="/admin/customer_order">
+            Order Test System
+            </router-link>
+          </li>
 
         </ul>
     </div>
@@ -60,7 +66,6 @@ export default {
         .post(api, { 'api_token': this.token })
         .then((res) => {
         // 登入沒有問題
-          console.log(res);
           if (res.data.success) {
             this.checkSuccess = true;
           }
@@ -71,9 +76,11 @@ export default {
         });
     },
 
-    signout() {
+    signOut() {
       document.cookie = 'token=;expires=;';
-      console.log('token 已清除');
+      this.$bus.$emit('message:push',
+        'Sign out successful.',
+        'success');
       this.$router.push('/login');
     },
   },

@@ -83,12 +83,21 @@ const routes = [
         component: () => import('../views/admin/Orders.vue'),
       },
       {
-        path: 'images',
-        component: () => import('../views/admin/Images.vue'),
+        path: 'storages',
+        component: () => import('../views/admin/Storages.vue'),
       },
       {
         path: 'settings',
         component: () => import('../views/admin/Settings.vue'),
+      },
+      // 模擬訂單系統
+      {
+        path: 'customer_order',
+        component: () => import('../views/admin/CustomerOrders.vue'),
+      },
+      {
+        path: 'customer_checkout/:orderId',
+        component: () => import('../views/admin/CustomerCheckout.vue'),
       },
 
     ],

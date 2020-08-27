@@ -1,10 +1,10 @@
 <template>
   <div class="admin__products container">
     <Loading :active.sync="isLoading" />
-    <h2>Products List</h2>
+    <h2>PRODUCTS LIST</h2>
     <div class="text-right mt-4">
         <button class="btn btn-primary" @click.prevent="openModal('new')">
-          Add new product
+          <i class="fas fa-plus"></i>  Add new product
         </button>
     </div>
 
@@ -27,7 +27,7 @@
             <th width="120">
               Enabled?
             </th>
-            <th width="120">
+            <th width="160">
               Edit
             </th>
           </tr>
@@ -51,14 +51,14 @@
               <div class="btn-group">
 
                 <button class="btn btn-outline-primary btn-sm" @click="openModal('edit', item)">
-                  Edit
+                  <i class="fas fa-wrench"></i>    Edit
                 </button>
 
                 <button
                   class="btn btn-outline-danger btn-sm"
                   @click="openModal('delete', item)"
                 >
-                  Delete
+                  <i class="fas fa-trash-alt"></i>  Delete
                 </button>
               </div>
             </td>
@@ -66,7 +66,10 @@
         </tbody>
       </table>
 
-      <Pagination :pages="pagination" @emit-pages="getProducts"></Pagination>
+      <Pagination
+        :pages="pagination"
+        @emit-pages="getProducts"
+      />
 
       <ProductModal ref="productModel"
       :temp-product="tempProduct"
@@ -106,7 +109,6 @@ export default {
       isLoading: false,
       status: {
         fileUploading: false,
-        filePath: '',
       },
     };
   },
@@ -169,20 +171,22 @@ export default {
       // 新增商品
       let api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/admin/ec/product`;
       let httpMethod = 'post';
+      let msg = 'New product has been added.';
 
       // 當不是新增商品時則切換成編輯商品 API
       if (!this.isNew) {
         api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/admin/ec/product/${this.tempProduct.id}`;
         httpMethod = 'patch';
+        msg = 'Product has been updated.';
       }
 
       this.$http[httpMethod](api, this.tempProduct)
         .then(() => {
           $('#productModal').modal('hide');
 
-          // this.$bus.$emit('message:push',
-          //   '新增成功囉，好棒ヽ(＾Д＾)ﾉ ',
-          //   'success');
+          this.$bus.$emit('message:push',
+            msg,
+            'success');
 
           this.isLoading = false;
           this.getProducts();
@@ -190,12 +194,11 @@ export default {
           this.isLoading = false;
           const errorData = error.response.data;
           $('#productModal').modal('hide');
-          console.log(errorData);
 
-          // this.$bus.$emit('message:push',
-          //   `出現錯誤惹，好糗Σ( ° △ °|||)︴
-          //    ${errorData}`,
-          //   'danger');
+          this.$bus.$emit('message:push',
+            `Something is wrong.
+             ${errorData}`,
+            'danger');
         });
     },
     delProduct() {
@@ -207,9 +210,9 @@ export default {
         $('#delProductModal').modal('hide');
         this.isLoading = false;
 
-        // this.$bus.$emit('message:push',
-        //   '刪除成功囉，好棒ヽ(＾Д＾)ﾉ',
-        //   'success');
+        this.$bus.$emit('message:push',
+          'Product has been deleted',
+          'success');
         this.getProducts();
       });
     },
@@ -228,12 +231,13 @@ export default {
         this.status.fileUploading = false;
         if (res.status === 200) {
           this.tempProduct.imageUrl.push(res.data.data.path);
-          this.status.filePath = res.data.data.path;
+          this.$bus.$emit('message:push',
+            'Image has been uploaed',
+            'success');
         }
       }).catch(() => {
         this.$bus.$emit('message:push',
-          `檔案上傳失敗惹，好糗Σ( ° △ °|||)︴
-          請檢查是不是檔案大小超過 2MB`,
+          'Upload failed. Please check the file should not be over 2MB.',
           'danger');
 
         this.status.fileUploading = false;

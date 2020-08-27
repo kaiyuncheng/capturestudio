@@ -44,7 +44,7 @@
             <button type="button" class="btn btn-outline-danger btn-sm ml-auto"
                 :disabled="status.loadingItem === item.id" @click="addToCart(item.id)">
               <i v-if="status.loadingItem === item.id" class="spinner-grow spinner-grow-sm"></i>
-              <i class="fas fa-shopping-cart mr-1"></i> Book Now !
+              <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
             </button>
           </div>
         </div>

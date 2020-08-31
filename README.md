@@ -1,10 +1,6 @@
-# work_week6
+# Capture Studio Photography
 
-## WEEK7 後台管理
-https://kaiyuncheng.github.io/week_6_work/#/login
-
-## WEEK6
-https://kaiyuncheng.github.io/week_6_work/
+https://kaiyuncheng.github.io/capturestudio/
 
 ## Project setup
 ```
@@ -28,4 +24,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-# week_6_work
+

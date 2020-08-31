@@ -82,7 +82,7 @@ export default {
   top: 20px;
   right: 0;
   z-index: 11000;
-  animation: showup 4s;
+  animation: showup 5s;
 }
 
 @keyframes showup {

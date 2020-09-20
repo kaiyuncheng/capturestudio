@@ -47,12 +47,23 @@ table {
 	border-spacing: 0;
 }
 
-/* my custom reset */
 
-button{
+/* my custom reset */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+button {
 	border: none;
 	outline: none;
-	&:hover, &:focus{
+
+	&:hover,
+	&:focus {
 		outline: none
 	}
 }
@@ -62,9 +73,17 @@ a {
 	text-decoration: none;
 }
 
-a:hover, button:hover, input[type=button]:hover{
+a:hover,
+button:hover,
+input[type=button]:hover {
 	cursor: pointer;
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
 }
 
 .clearfix:after {
@@ -72,4 +91,3 @@ a:hover, button:hover, input[type=button]:hover{
 	display: block;
 	clear: both;
 }
-	

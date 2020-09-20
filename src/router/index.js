@@ -57,6 +57,18 @@ const routes = [
       },
 
       {
+        path: '/customer_info',
+        name: 'CustomerInfo',
+        component: () => import('../views/CustomerInfo.vue'),
+      },
+
+      {
+        path: '/customer_confirm/:orderId',
+        name: 'CustomerConfirm',
+        component: () => import('../views/CustomerConfirm.vue'),
+      },
+
+      {
         path: '/login',
         name: 'Login',
         component: () => import('../views/Login.vue'),

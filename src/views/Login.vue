@@ -1,8 +1,9 @@
 <template>
-  <div class="login container">
-    <form class="form-sign-in text-center" @submit.prevent="signin">
-      <h2 class="h5 mb-3 font-weight-light">
-        Sign in with Email
+  <div class="login">
+    <form class="form-sign-in" @submit.prevent="signin">
+      <span>- Member Sign in</span>
+      <h2 class="font-weight-light">
+        Please sign in with Email
       </h2>
       <div class="form-input mb-3">
         <label for="inputEmail" class="sr-only">Email address</label>
@@ -31,8 +32,8 @@
             </label>
           </div> -->
 
-      <button class="btn btn-primary btn-block" type="submit">
-        Sign in
+      <button class="button" type="submit">
+        SIGN IN
       </button>
 
     </form>

@@ -1,21 +1,84 @@
-$color-primary:#704E00;
-$color-secondary: #bbb6ab;
+$color-primary:#704e00;
+$color-primary08: #704e00e5;
+$color-primary06: #704e0095;
+$color-primary02: #704e0015;
+$color-secondary: #6c757d;
 $color-dark: #3e3e3e;
 $color-light: #cccccc;
 $color-black: #000000;
 $color-white: #ffffff;
+$color-red: #B4301E;
 
+// font
 body {
-  font-family: 'Raleway', 'Lora', sans-serif;
-  font-weight: 500;
+  font-family: 'Raleway',
+    'Martel',
+    sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
 }
 
-h2{
+h2 {
+  font-family: 'Martel';
   font-size: 1.5rem;
-  margin: 20px 0;
-  color: $color-dark;
+  color: $color-primary;
+  font-style: italic;
 }
 
+h3 {
+  font-family: 'Martel';
+  font-size: 3rem;
+  font-weight: 200;
+  color: $color-white;
+  font-style: italic;
+}
+
+h4 {
+  font-family: 'Martel';
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Raleway';
+  font-size: 1rem;
+  color: $color-dark;
+
+}
+
+span {
+  font-family: 'Martel';
+  font-size: 0.8rem;
+  color: $color-dark;
+  font-weight: 600;
+  font-style: italic;
+}
+
+// btn
+
+.btn-lg{
+  margin-bottom: 50px;
+}
+
+
+.button {
+  display: inline-block;
+  border: 1px solid $color-white;
+  color: $color-white;
+  background: $color-primary06;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-style: normal;
+  padding: 15px 20px;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    background: $color-primary08;
+    color: $color-white;
+    transition: all .3s ease-in-out;
+  }
+}

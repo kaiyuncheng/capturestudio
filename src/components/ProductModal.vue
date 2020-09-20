@@ -83,22 +83,22 @@
               </div>
               <hr>
               <div class="form-group">
-                <label for="description">Product Description</label>
+                <label for="description">Product Content</label>
                 <textarea
                   id="description"
-                  v-model="tempProduct.description"
+                  v-model="tempProduct.content"
                   type="text"
                   class="form-control"
-                  placeholder="Enter description"
+                  placeholder="Enter content"
                   required
                 >
                 </textarea>
               </div>
               <div class="form-group">
-                  <label for="content">Content</label>
+                  <label for="content">Description</label>
                   <vue-editor
                     id="content"
-                    v-model="tempProduct.content"
+                    v-model="tempProduct.description"
                   />
               </div>
               <div class="form-group">

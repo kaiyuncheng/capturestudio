@@ -1,0 +1,243 @@
+.page__services{
+
+  .heading{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+
+    .heading__txt {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .category__bar{
+    text-align: left;
+    margin-bottom: 50px;
+
+    .category__link{
+      border-bottom: 1px solid $color-primary;
+      padding: 15px;
+      transition: all 0.6s ease-in-out;
+
+      @include media-768 {
+        display: inline-block;
+        
+        margin: 10px 20px 10px 0;
+        border: 1px solid $color-primary;
+      }
+
+      &:hover,
+      &:focus{
+        transition: all 0.6s ease-in-out;
+        background-color: $color-primary08;
+        color: $color-white;
+      }
+
+      &.is-active{
+        background-color: $color-primary08;
+        color: $color-white;
+
+      }
+    }
+
+    .category__title {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .services__item{
+    position: relative;
+
+    .item__img {
+      height: 400px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid $color-primary02;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, transparent 10%, rgba(0, 0, 0, 0.5));
+        transition: all 0.6s ease-in-out;
+        opacity: 1;
+        z-index: 1;
+
+      }
+
+      &:hover {
+        transition: all 0.6s ease-in-out;
+
+        &:before {
+          transition: all 0.6s ease-in-out;
+          opacity: 0;
+        }
+        img {
+          transform: scale(1.1);
+        }
+
+        .price i {
+          transform: translateX(28px);
+          transition: all 0.5s ease-in-out;
+
+          @include media-768 {
+            transform: translateX(0px);
+          }
+        }
+
+        .more {
+          text-align: right;
+          transform: translateX(100px);
+          border-left: 0;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+
+    
+    
+    .item__price{
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      opacity: 0.6;
+      z-index: 2;
+      transition: all 0.2s ease-in-out;
+
+      @include media-768 {
+        right: 50px;
+        left: auto;
+      }
+
+      .more, .price {
+        display: inline-block;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 0.8rem;
+        font-style: normal;
+        color: $color-white;
+        margin-bottom: 0;
+        border: 1px solid $color-white;
+        background: $color-primary;
+        padding: 15px 20px;
+        transition: all 0.5s ease-in-out;
+        width: 180px;
+
+        i {
+          transform: translateX(5px);
+          transition: all 0.6s ease-in-out;
+
+          
+        }
+      }
+
+      .more {
+         text-align: right;
+
+         @include media-768 {
+           display: none;
+         }
+      }
+
+      .price {
+        transform: translateX(-181px);
+        border-right: 0;
+
+        @include media-768 {
+          transform: translateX(0px);
+          border-right: 1px solid $color-white;
+        }
+
+        span{
+          font-family: 'Raleway';
+          font-weight: 700;
+          font-size: 0.8rem;
+          font-style: normal;
+          padding-right: 2px;
+          color: $color-white;
+
+        }
+      }
+
+      &:hover {
+        opacity: 0.9;
+        transition: all 0.2s ease-in-out;
+
+      }
+    }
+
+    .item__cart {
+      position: absolute;
+      top: 302px;
+      right: 65px;
+      opacity: 0.6;
+      z-index: 2;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      span {
+        display: inline-block;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 0.8rem;
+        font-style: normal;
+        color: $color-white;
+        margin-bottom: 0;
+        border: 1px solid $color-white;
+        background: $color-primary;
+        padding: 15px 20px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      @include media-768 {
+        top: 50px;
+      }
+
+      &:hover {
+        opacity: 0.9;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .item__info {
+      border: 1px solid $color-primary02;
+      border-top: 0px;
+      padding: 50px;
+      text-align: left;
+
+      .item__title{
+
+        margin: 20px 0;
+        &:hover h2{
+        color: $color-dark;
+        }
+      }
+    }
+
+    .item_category{
+      border: 1px red solid;
+    }
+
+  }
+
+  
+
+}

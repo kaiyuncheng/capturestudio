@@ -18,9 +18,9 @@
           </div>
           <div class="carousel-txt">
             <h3>We capture your best moments.<span>- Capture Studio</span></h3>
-            <a herf="#" class="button">
+            <router-link to="/services" class="button">
               LEARN MORE
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="carousel-item">
@@ -29,9 +29,9 @@
             <h3>We record your memories of lifetime.
               <span>- Capture Studio</span>
             </h3>
-            <a herf="#" class="button">
+            <router-link to="/services" class="button">
               LEARN MORE
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="carousel-item">
@@ -40,9 +40,9 @@
             <h3>We record your memories of lifetime.
               <span>- Capture Studio</span>
             </h3>
-            <a herf="#" class="button">
+            <router-link to="/services" class="button">
               LEARN MORE
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="carousel-item">
@@ -51,9 +51,9 @@
             <h3>We capture your best moments.
               <span>- Capture Studio</span>
             </h3>
-            <a herf="#" class="button">
+            <router-link to="/services" class="button">
               LEARN MORE
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="carousel-item">
@@ -62,9 +62,9 @@
             <h3>We capture your best memories with your love ones.
               <span>- Capture Studio</span>
             </h3>
-            <a herf="#" class="button">
+            <router-link to="/services" class="button">
               LEARN MORE
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -100,9 +100,9 @@
               Our Photography is not just another beatiful picture.
               Your life is a personal story that we are there to document.
             </p>
-            <a herf="#" class="button">
+            <router-link to="/about" class="button">
               MORE ABOUT US
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
             <div class="img">
@@ -133,76 +133,76 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1597685046918-cb86c4d730d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>WEDDING <i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>FAMILY <i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1524492188898-7e0f39d0ec03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>CHILDREN <i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1550791753-b14198adc434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>MATERNITY<i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>EVENT<i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>COMMERCIAL<i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>PORTRAIT<i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="col-12 col-md-6">
-            <a href="#" class="img">
+            <router-link to="/services" class="img">
               <img src="https://images.unsplash.com/photo-1572200426105-138b932bba64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>PET<i class="fas fa-angle-right"></i></span>
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -435,6 +435,13 @@ export default {
     setTimeout(() => {
       this.isLoading = false;
     }, 1000);
+  },
+
+  methods: {
+
+    goTo(page) {
+      this.$router.push(`/${page}`);
+    },
   },
 };
 </script>

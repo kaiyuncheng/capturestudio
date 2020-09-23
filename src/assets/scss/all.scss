@@ -2,17 +2,27 @@
 @import '~bootstrap/scss/functions';
 @import './variables';
 @import '~bootstrap';
+
 @import 'mixin';
 @import 'reset';
 @import 'layout';
+
+// menus and admin dashboard
 @import 'menus';
+
+//pages
 @import 'index';
 @import 'about';
 @import 'services';
 @import 'service';
-@import 'cart';
 @import 'galleries';
-@import 'login';
 @import 'contact';
+@import 'cart';
+@import 'login';
+
+// components
+@import 'related';
+@import 'process';
+@import 'gotop';
 
 

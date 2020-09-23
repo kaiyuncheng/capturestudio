@@ -69,6 +69,12 @@ const routes = [
       },
 
       {
+        path: '/customer_complete',
+        name: 'CustomerComplete',
+        component: () => import('../views/CustomerComplete.vue'),
+      },
+
+      {
         path: '/login',
         name: 'Login',
         component: () => import('../views/Login.vue'),
@@ -119,6 +125,12 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+    return { x: 0, y: 0 };
+  },
 });
 
 export default router;

@@ -93,5 +93,18 @@
   .service__title{
     margin-top: 50px;
   }
+
+  .detail__slide{
+    .carousel-item{
+      height: 550px;
+      background-size: cover;
+      background-position: center center;
+      @include media-768 {
+        height: 300px;
+      }
+    }
+
+    
+  }
  
 }

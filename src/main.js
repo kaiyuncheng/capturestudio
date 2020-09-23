@@ -4,6 +4,10 @@ import VueAxios from 'vue-axios';
 import 'bootstrap';
 import $ from 'jquery';
 
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+// import style (>= Swiper 6.x)
+import 'swiper/swiper-bundle.css';
+
 // 驗證套件
 import {
   ValidationObserver,
@@ -31,6 +35,8 @@ Vue.use(VueAxios, axios);
 
 Vue.use(Loading);
 Vue.component('Loading', Loading);
+
+Vue.use(VueAwesomeSwiper /* { default options with global component } */);
 
 // Bus
 // Message

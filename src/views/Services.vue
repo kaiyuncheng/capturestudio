@@ -98,6 +98,15 @@ export default {
 
   created() {
     this.getProducts();
+    this.$bus.$on('category', (category) => {
+      this.filterCategory = category;
+    });
+  },
+
+  beforeDestroy() {
+    this.$bus.$off('category', (category) => {
+      this.filterCategory = category;
+    });
   },
 
   computed: {
@@ -135,6 +144,7 @@ export default {
         this.$bus.$emit('message:push',
           'Added to cart',
           'primary');
+        this.getCart();
       }).catch((error) => {
         this.status.loadingItem = '';
 
@@ -144,6 +154,26 @@ export default {
             `Something is wrong. ${err}`,
             'danger');
         });
+      });
+    },
+
+    getCart() {
+      this.isLoading = true;
+
+      const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/ec/shopping`;
+
+      this.$http.get(api).then((res) => {
+        this.cart = res.data.data;
+        this.$bus.$emit('cartUpdate', {
+          cart: this.cart,
+        });
+
+        this.cartTotal = 0;
+        this.cart.forEach((item) => {
+          this.cartTotal += item.product.price * item.quantity;
+        });
+
+        this.isLoading = false;
       });
     },
 

@@ -133,76 +133,76 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Wedding')">
               <img src="https://images.unsplash.com/photo-1597685046918-cb86c4d730d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>WEDDING <i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Family')">
               <img src="https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>FAMILY <i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Children')">
               <img src="https://images.unsplash.com/photo-1524492188898-7e0f39d0ec03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>CHILDREN <i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Maternity')">
               <img src="https://images.unsplash.com/photo-1550791753-b14198adc434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>MATERNITY<i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Event')">
               <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>EVENT<i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Commercial')">
               <img src="https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>COMMERCIAL<i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Portrait')">
               <img src="https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>PORTRAIT<i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <router-link to="/services" class="img">
+            <div class="img" @click="goTo('Pet')">
               <img src="https://images.unsplash.com/photo-1572200426105-138b932bba64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>PET<i class="fas fa-angle-right"></i></span>
               </div>
-            </router-link>
+            </div>
           </div>
         </div>
       </div>
@@ -259,7 +259,7 @@
       class="carousel slide carousel__comments" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a herf="#" class="row comment">
+          <router-link to="/galleries" class="row comment">
             <div class="comment__img col-10 col-md-3">
               <img src="https://images.unsplash.com/photo-1541250848049-b4f7141dca3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
               <span>Amy & John, London</span>
@@ -276,10 +276,10 @@
                 <i class="fas fa-image"></i>
               </a>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="carousel-item">
-          <a herf="#" class="row comment">
+          <router-link to="/galleries" class="row comment">
             <div class="comment__img col-10 col-md-3">
               <img src="https://images.unsplash.com/photo-1588979355313-6711a095465f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=642&q=80" alt="">
               <span>Family Jones , Hawaii</span>
@@ -297,10 +297,10 @@
                 <i class="fas fa-image"></i>
               </a>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="carousel-item">
-          <a herf="#" class="row comment">
+          <router-link to="/galleries" class="row comment">
             <div class="comment__img col-10 col-md-3">
               <img src="https://images.unsplash.com/photo-1542037179399-bbf09c7f9888?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="">
               <span>Mrs. Kimmel, Paris</span>
@@ -317,7 +317,7 @@
                 <i class="fas fa-image"></i>
               </a>
             </div>
-          </a>
+          </router-link>
         </div>
       </div>
       <a
@@ -410,7 +410,7 @@
             </h4>
             <form class="subscribe__form" action="">
               <input type="email" id="email" name="email" placeholder="Please Enter Your Email">
-              <button class="submit" type="submit"><i class="fas fa-paper-plane"></i></button>
+              <button class="button" type="submit"><i class="fas fa-paper-plane"></i></button>
             </form>
             <p>Stay in the know on news, special offers, and more.</p>
         </div>
@@ -425,6 +425,7 @@ export default {
   name: 'Index',
   data() {
     return {
+      filterCategory: '',
       isLoading: false,
       fullPage: true,
     };
@@ -439,9 +440,14 @@ export default {
 
   methods: {
 
-    goTo(page) {
-      this.$router.push(`/${page}`);
+    goTo(item) {
+      this.$router.push('/services');
+      this.filterCategory = item;
     },
+  },
+
+  beforeDestroy() {
+    this.$bus.$emit('category', this.filterCategory);
   },
 };
 </script>

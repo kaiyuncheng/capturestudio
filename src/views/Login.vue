@@ -1,42 +1,47 @@
 <template>
-  <div class="login">
-    <form class="form-sign-in" @submit.prevent="signin">
-      <span>- Member Sign in</span>
-      <h2 class="font-weight-light">
-        Please sign in with Email
-      </h2>
-      <div class="form-input mb-3">
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input
-            type="email"
-            id="inputEmail" v-model="user.email"
-            class="form-control shadow-none"
-            placeholder="Email address"
-            required
-            autofocus
-        />
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input
-            type="password"
-            id="inputPassword"
-            v-model="user.password"
-            class="form-control shadow-none"
-            placeholder="Password"
-            required
-        />
-
-      </div>
-        <!-- <div class="checkbox mb-3 text-left">
+  <div class="section page__login">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form class="form-sign-in" @submit.prevent="signin">
+            <span>- Member Sign in</span>
+            <h2>
+              Please sign in with Email
+            </h2>
+            <div class="form-input mb-3">
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="inputEmail"
+                v-model="user.email"
+                class="form-control shadow-none"
+                placeholder="Email address"
+                required
+                autofocus
+              />
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input
+                type="password"
+                id="inputPassword"
+                v-model="user.password"
+                class="form-control shadow-none"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <!-- <div class="checkbox mb-3 text-left">
             <label>
               <input type="checkbox" value="remember-me" /> Remember me
             </label>
-          </div> -->
+            </div> -->
 
-      <button class="button" type="submit">
-        SIGN IN
-      </button>
-
-    </form>
+            <button class="button" type="submit">
+              SIGN IN
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -65,15 +70,16 @@ export default {
           // expires 設置有效時間
           document.cookie = `token=${token};expires=${new Date(expired * 1000)};`;
           this.isLoading = false;
-          this.$bus.$emit('message:push',
-            'Sign in successful.',
-            'success');
+          this.$bus.$emit('message:push', 'Sign in successful.', 'success');
           this.$router.push('/admin/products');
         })
         .catch((err) => {
-          this.$bus.$emit('message:push',
+          this.$bus.$emit(
+            'message:push',
             `Sign in failed.
-            ${err}`, 'danger');
+            ${err}`,
+            'danger',
+          );
 
           this.isLoading = false;
         });

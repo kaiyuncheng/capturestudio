@@ -634,7 +634,7 @@ export default {
       }).catch((error) => {
         const errorData = error.response.data.errors;
         this.isLoading = false;
-        console.log(errorData);
+        // console.log(errorData);
 
         if (errorData) {
           errorData.code.forEach((err) => {
@@ -678,7 +678,7 @@ export default {
         this.getCart();
       }).catch((error) => {
         const errorData = error.response.data.errors;
-        console.log(errorData);
+        // console.log(errorData);
 
         errorData.forEach((err) => {
           this.$bus.$emit('message:push',

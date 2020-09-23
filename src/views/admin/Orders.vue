@@ -105,7 +105,7 @@ export default {
         this.orders = res.data.data;
         this.pagination = res.data.meta.pagination;
         this.isLoading = false;
-        console.log(this.orders);
+        // console.log(this.orders);
       });
     },
     setOrderPaid(item) {

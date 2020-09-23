@@ -28,8 +28,8 @@
           </li>
           <li class="menu__cart">
             <router-link to="/cart">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="badge cart__badge">20</span>
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart__badge" v-if="cart.length">{{ cart.length }}</span>
             </router-link>
           </li>
         </ul>
@@ -81,23 +81,31 @@ export default {
   },
   data() {
     return {
-      carts: [],
-      id: '',
+      cart: {},
       openNav: false,
       isLoading: false,
     };
   },
   created() {
-    this.isLoading = true;
-    const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/ec/shopping`;
-    this.$http.get(api)
-      .then((res) => {
-        this.carts = res.data.data;
-        this.isLoading = false;
-      });
+    this.getCart();
+    this.$bus.$on('cartUpdate', (event) => {
+      this.cart = event.cart;
+    });
   },
 
   methods: {
+    getCart() {
+      this.isLoading = true;
+
+      const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/ec/shopping`;
+
+      this.$http.get(api).then((res) => {
+        this.cart = res.data.data;
+        this.$bus.$emit('cartUpdate', { cart: this.cart });
+
+        this.isLoading = false;
+      });
+    },
 
   },
 };

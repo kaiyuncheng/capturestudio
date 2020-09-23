@@ -117,6 +117,10 @@ height: 550px;
       height: 500px;
     }
   }
+
+  .button{
+    margin-bottom: 50px;
+  }
 }
 
 // SERVICES
@@ -134,6 +138,7 @@ height: 550px;
   .img{
     height: 300px;
     overflow: hidden;
+    cursor: pointer;
     
     img{
       width: 100%;
@@ -170,11 +175,21 @@ height: 550px;
           transform: translateX(5px);
           transition: all 0.6s ease-in-out;
         }
+
+        @include media-768 {
+          display: none;
+        }
       }
 
       span:last-child{
         transform: translateX(-141px);
         border-right: 0;
+
+        @include media-768 {
+          display: inline-block;
+          transform: translateX(0);
+          border: 1px solid $color-white;
+        }
       }
 
       &:hover{
@@ -210,20 +225,22 @@ height: 550px;
 
         img{
           transform: scale(1.1);
-          
         }
         
         span i {
           transform: translateX(28px);
+
+
+          @include media-768 {
+            transform: translateX(10px);
+          }
         }
         
         span:first-child {
         transform: translateX(128px);
         border-left: 0;
         transition: all 0.5s ease-in-out;
-        }
-
-        
+        }        
     }
   }
 
@@ -451,8 +468,9 @@ height: 550px;
     background-attachment: fixed;
     background-size: cover;
     padding: 100px 150px;
+
     @include media-768{
-      padding: 100px 50px;
+      padding: 100px 30px;
     }
   }
   .subscribe__item{
@@ -461,6 +479,11 @@ height: 550px;
     padding: 50px;
     max-width: 1200px;
     margin: auto;
+
+    @include media-768 {
+      padding: 25px;
+    }
+
     h4{
       color: $color-white;
       line-height: 1.5;
@@ -471,6 +494,7 @@ height: 550px;
       color: $color-white;
     }
     .subscribe__form {
+      display: flex;
       margin-bottom: 20px;
       width: 100%;
       position: relative;
@@ -499,20 +523,9 @@ height: 550px;
           }
         }
       }
-      .submit{
-        border: 1px solid $color-white;
+      .button{
         border-bottom: 0;
-        background-color: $color-primary06;
-        color: $color-white;
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        font-size: 1.4rem;
-        &:hover{
-          background-color: $color-primary08;
-        }
+        font-size: 1rem;
       }
     }
   }  

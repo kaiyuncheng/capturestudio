@@ -1,0 +1,17 @@
+.top__btn{
+  border: 1px solid $color-primary;
+  background: #ffffff77;
+  color: $color-primary;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  opacity: 0;
+  z-index: -1;
+  transition: .3s ease-in-out;
+
+  &.show__btn {
+    opacity: 1;
+    transition: .3s ease-in-out;
+    z-index: 3;
+  }
+}

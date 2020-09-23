@@ -1,6 +1,5 @@
 <template>
   <div class="page__about">
-
      <div class="section about">
       <div class="container">
         <div class="row">

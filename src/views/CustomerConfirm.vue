@@ -1,91 +1,106 @@
 <template>
-  <div class="page__confirm">
-    <h2>Order Test System - Check Out</h2>
-    <div class="my-5 row no-gutters justify-content-center">
-      <form class="col-md-6 text-left" @submit.prevent="payOrder">
-        <table class="table">
-          <thead>
-            <th>#</th>
-            <th>Products</th>
-            <th>Quantity</th>
-            <th class="text-right">Session Price</th>
-            <th class="text-right">Total Price</th>
-          </thead>
-          <tbody>
-            <tr v-for="(item, key) in order.products" :key="key">
-              <td>
-                {{ key + 1 }}
-              </td>
-              <td class="align-middle">
-                {{ item.product.title }}
-              </td>
-              <td class="align-middle">{{ item.quantity }}/{{ item.product.unit }}</td>
-              <td class="align-middle text-right">
-                {{ item.product.price }}
-              </td>
-              <td class="align-middle text-right">
-                {{ item.product.price * item.quantity }}
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="4" class="text-right">
-                Total
-              </td>
-              <td class="text-right">
-                {{ order.amount }}
-              </td>
-            </tr>
-          </tfoot>
-        </table>
+  <div class="section page__confirm">
+    <Process :process="3" />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Order Confirmation</h2>
+          <form @submit.prevent="payOrder" class="confirm__form">
+              <ul class="col-lg-6 col-md-8 col-12">
+                <li class="row confirm__title">
+                  <div class="col-md-6 col-12">
+                    <h5>Services</h5>
+                  </div>
+                  <div class="col-md-3 col-12">
+                    <h5>Session</h5>
+                  </div>
+                  <div class="col-md-3 col-6 price">
+                    <h5>Price</h5>
+                  </div>
+                </li>
+                <li class="row cart__list" v-for="(item, key) in order.products" :key="key">
+                  <div class="col-md-6 col-12 list__name">
+                    <h5 class="">{{ key + 1 }} - {{ item.product.title }}</h5>
+                  </div>
+                  <div class="col-md-3 col-12 list_input">
+                    {{ item.quantity }} / {{ item.product.unit}}
+                  </div>
+                  <div class="col-md-3 col-12 list_price">
+                    $ {{ item.product.price * item.quantity }}
+                  </div>
+                </li>
+                <li class="confirm__subtotal" v-if="order.coupon">
+                  Subtotal $
+                  {{ order.amount *  100 / order.coupon.percent}}
+                </li>
+                <li class="confirm__discount" v-if="order.coupon">
+                  {{ 100 - order.coupon.percent }} % OFF  -$
+                  {{ order.amount * ( 100 - order.coupon.percent) / order.coupon.percent}}
+                </li>
+                <li class="confirm__total">
+                  Total $ {{ order.amount }}
+                </li>
+                <li class="confirm__info">
+                    <h4>Your Information</h4>
+                    <div class="info__item">
+                      <p>Name:</p>
+                      <p> {{ order.user.name }}</p>
+                    </div>
 
-        <table class="table">
-          <tbody>
-            <tr>
-              <th>Name</th>
-              <td>{{ order.user.name }}</td>
-            </tr>
-            <tr>
-              <th width="100">
-                Email
-              </th>
-              <td>{{ order.user.email }}</td>
-            </tr>
-            <tr>
-              <th>Phone Number</th>
-              <td>{{ order.user.tel }}</td>
-            </tr>
-            <tr>
-              <th>Address</th>
-              <td>{{ order.user.address }}</td>
-            </tr>
-            <tr>
-              <th>Paid?</th>
-              <td>
-                <span v-if="!order.paid">Unpaid</span>
-                <span v-else class="text-success">Payment Completed</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div v-if="order.paid === false" class="text-right">
-          <button class="btn btn-danger">
-            Go To Payment
-          </button>
+                    <div class="info__item">
+                      <p>Email:</p>
+                      <p>{{ order.user.email }}</p>
+                    </div>
+
+                    <div class="info__item">
+                      <p>Phone:</p>
+                      <p>{{ order.user.tel }}</p>
+                    </div>
+
+                    <div class="info__item">
+                      <p>Addres:</p>
+                      <p>{{ order.user.address }}</p>
+                    </div>
+                    <div class="info__item">
+                      <p>Message:</p>
+                      <p>{{ order.message }}</p>
+                    </div>
+                    <div class="info__item">
+                      <p>Payment:</p>
+                      <p v-if="!order.paid"> {{ order.payment }} - Unpaid</p>
+                      <p v-else> {{ order.payment }} - Payment Completed</p>
+                    </div>
+                </li>
+                <li class="cart__btn">
+                  <button type="button" class="button" @click="goBack">
+                    <i class="fas fa-chevron-left mr-2"></i> Back
+                  </button>
+                  <button type="submit" class="button" v-if="order.paid === false">
+                    <i class="fas fa-check mr-2"></i>
+                    Go To Payment
+                  </button>
+                </li>
+              </ul>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Process from '@/components/Process.vue';
+
 export default {
   name: 'CustomerConfirm',
+  components: {
+    Process,
+  },
   data() {
     return {
       order: {
         user: {},
+        coupon: {},
       },
       orders: [],
       orderId: '',
@@ -131,11 +146,15 @@ export default {
           this.getDetailed(this.orderId);
         }
         this.getOrders();
-        this.$bus.$emit('message:push',
-          'Payment completed.',
-          'success');
+        this.$bus.$emit('message:push', 'Payment completed.', 'success');
         this.isLoading = false;
+
+        this.$router.push('/customer_complete');
       });
+    },
+
+    goBack() {
+      this.$router.push('/customer_info');
     },
   },
 };

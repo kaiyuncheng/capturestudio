@@ -34,6 +34,10 @@ h3 {
   font-weight: 200;
   color: $color-white;
   font-style: italic;
+
+  @include media-768 {
+    font-size: 2rem;
+  }
 }
 
 h4 {
@@ -75,10 +79,27 @@ span {
   font-style: normal;
   padding: 15px 20px;
   transition: all .3s ease-in-out;
+  
 
   &:hover{
     background: $color-primary08;
     color: $color-white;
     transition: all .3s ease-in-out;
+    cursor: pointer;
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  // border: 1px solid green;
+  -webkit-text-fill-color: $color-dark;
+  box-shadow: 0 0 0px 1000px $color-white inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

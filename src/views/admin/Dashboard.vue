@@ -99,8 +99,8 @@ export default {
             this.checkSuccess = true;
           }
         })
-        .catch((err) => {
-          console.log('錯誤', err);
+        .catch(() => {
+          // console.log('錯誤', err);
           this.$router.push('/login');
         });
     },

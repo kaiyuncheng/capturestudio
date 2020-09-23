@@ -2,5 +2,366 @@
 .page__info,
 .page__confirm {
   padding-top: 50px;
-  
+  h2 {
+    margin-bottom: 50px;
+  }
 }
+
+.cart__title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $color-primary;
+  h5 {
+    font-weight: 500;
+  }
+
+  @include media-768 {
+    display: none;
+  }
+}
+.cart__list {
+  margin-top: 20px 0;
+  padding: 15px;
+  border-bottom: 1px solid $color-primary06;
+
+  @include media-768 {
+    padding: 20px;
+  }
+
+  .list__name {
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+    h5 {
+      font-weight: 600;
+    }
+  }
+
+  .list_input,
+  .list_price,
+  .list_btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .list_input {
+    .btn-outline-primary {
+      border-radius: 0;
+    }
+
+    @include media-768 {
+      margin: 20px 0;
+    }
+  }
+
+  .list_price {
+    @include media-768 {
+      justify-content: flex-end;
+    }
+  }
+
+  .list_btn {
+    justify-content: flex-end;
+    i {
+      padding: 10px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        transition: 0.3s ease-in-out;
+        border: 1px solid $color-primary;
+        color: $color-white;
+        background-color: $color-primary08;
+      }
+    }
+  }
+}
+
+.cart__btn {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+
+  @include media-768 {
+    margin: 0 -10px;
+    .button {
+      margin: 10px;
+    }
+  }
+}
+
+.cart__empty {
+  text-align: center;
+  padding: 50px;
+}
+
+.cart__detail {
+  background-color: $color-primary02;
+  border: 1px solid $color-primary02;
+  padding: 25px;
+
+  .cart__subtotal,
+  .cart__discount,
+  .cart__final {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h4 {
+    margin-bottom: 50px;
+  }
+
+  p {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .input__discount {
+    display: flex;
+    border-bottom: 1px solid $color-primary;
+    margin-bottom: 10px;
+
+    input {
+      height: 50px;
+      width: 100%;
+      border: 0;
+      padding-left: 10px;
+      color: $color-dark;
+      background: transparent;
+
+      &::placeholder {
+        padding-left: 5px;
+        color: $color-light;
+      }
+
+      &:focus {
+        border: 0;
+        outline: 0;
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    .button {
+      border: 1px solid $color-primary;
+      border-bottom: 0;
+    }
+  }
+
+  .discount__code{
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+
+  .cart__discount {
+    p {
+      color: $color-primary;
+      font-weight: 500;
+    }
+  }
+
+  .cart__final {
+    p {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  .detail__btn {
+    width: 100%;
+  }
+}
+
+
+
+.page__info{
+  text-align: center;
+
+  .info__form{
+    span {
+      margin: 10px 0 5px;
+      color: $color-red;
+    }
+
+    label{
+      margin-bottom: 5px;
+      font-family: Raleway;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-dark;
+    }
+
+    input{
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid $color-primary08;
+
+      &:focus{
+        border-bottom: 2px solid $color-primary08;
+        box-shadow: none;
+      }
+
+      &.is-valid{
+        border: 0;
+        border-bottom: 1px solid green;
+
+        &:focus{
+          border-bottom: 2px solid green;
+          box-shadow: none;
+        }
+      }
+
+      &.is-invalid{
+        border: 0;
+        border-bottom: 1px solid $color-red;
+
+        &:focus {
+          border-bottom: 2px solid $color-red;
+          box-shadow: none;
+        }
+      }
+
+    }
+
+    .form__pay,
+    .form__textarea {
+      label{
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      select{
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 20px 15px;
+        border: 1px solid $color-primary08;
+        background-image: url('https://hexschool-api.s3.us-west-2.amazonaws.com/custom/3tKI0qXh53vRbNESJltA1904PcAmAKLgy1xqiFh6o8rdzAiveBVpCABHcCD2jiH8CxWbPaJBgQJ3KG06HyoArDOiTm1spdlGeqiyujJl9EtZVDYGtUqcTKOta3FYQKDQ.png');
+        background-repeat: no-repeat;
+        background-position: 97% center;
+        background-size: 12px 12px;
+        &::-ms-expand {
+          display: none;
+        }
+        &:focus {
+          outline: 0;
+          border: 2px solid $color-primary08;
+        }
+
+      }
+
+      textarea{
+        border-radius: 0;
+        border: 1px solid $color-primary08;
+        &:focus {
+          outline: 0;
+          border: 2px solid $color-primary08;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .info__btn{
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+
+    
+  }
+
+}
+
+.page__confirm{
+  text-align: center;
+
+  .confirm__form{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+    .confirm__title{
+      padding-bottom: 20px;
+      border-bottom: 1px solid $color-primary;
+      @include media-768 {
+        display: none;
+      }
+      .price{
+        text-align: right;
+      }
+      h5{
+        font-weight: 500;
+      }
+    }
+
+    .list_price{
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    .confirm__subtotal{
+      margin: 20px 0;
+      text-align: right;
+    }
+
+    .confirm__discount{
+      margin-bottom: 20px;
+      text-align: right;
+      color: $color-primary;
+    }
+
+    .confirm__total{
+      margin: 20px 0;
+      text-align: right;
+      font-weight: 600;
+    }
+
+    .confirm__info{
+       padding: 25px;
+       display: flex;
+       flex-direction: column;
+       background: $color-primary02;
+       border: 1px solid $color-primary08;
+       h4{
+         margin-bottom: 20px;
+       }
+
+       .info__item{
+         display: flex;
+         p{
+           display: inline-block;
+           margin: 5px 10px 5px 0;
+         }
+         p + p{
+           font-weight: 600;
+         }
+       }
+    }
+  }
+}
+
+.page__complete{
+  text-align: center;
+  
+  h3{
+    line-height: 1.5;
+  }
+
+  .button{
+    margin: 10px;
+  }
+
+}
+
+

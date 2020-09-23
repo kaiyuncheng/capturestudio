@@ -88,11 +88,11 @@
             >
               <a
                 class="carousel-control-prev"
-                href="#carouselExampleIndicatrs_detail"
+                href="#carouselExampleIndicators_detail"
                 role="button"
                 data-slide="prev"
               >
-                <span class="carousel-control-pre-icon" aria-hidden="true"></span>
+                <div class="prev"><i class="fas fa-chevron-left"></i></div>
                 <span class="sr-only">Previous</span>
               </a>
               <a
@@ -101,7 +101,7 @@
                 role="button"
                 data-slide="next"
               >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <div class="next"><i class="fas fa-chevron-right"></i></div>
                 <span class="sr-only">Next</span>
               </a>
 
@@ -118,20 +118,17 @@
               <div class="carousel-inner">
                 <div
                   class="carousel-item active"
-                  style="height: 400px;background-size: cover;background-position: cen"
-                  :style="{ backgroundImage: `url(${product.imageUrl[0]})` }"
-                ></div>
-
-                <div
-                  class="carousel-item"
-                  style="height: 400px;background-size: cover;background-position: cen"
-                  :style="{ backgroundImage: `url(${product.imageUrl[1]})` }"
-                ></div>
-
-                <div
-                  class="carousel-item"
-                  style="height: 400px;background-size: cover;background-position: cen"
                   :style="{ backgroundImage: `url(${product.imageUrl[2]})` }"
+                ></div>
+
+                <div
+                  class="carousel-item"
+                  :style="{ backgroundImage: `url(${product.imageUrl[3]})` }"
+                ></div>
+
+                <div
+                  class="carousel-item"
+                  :style="{ backgroundImage: `url(${product.imageUrl[4]})` }"
                 ></div>
               </div>
             </div>
@@ -139,34 +136,7 @@
         </div>
         <div class="col-12">
           <h4 class="service__title">Recommendation</h4>
-          <!-- <div class="accordion border
-            border-bottom border-top-0 border-left-0 border-right-0"
-            id="accordionExample">
-            <div class="card border-0">
-              <div class="card-header
-                  bg-white border border-bottom-0
-                  border-top border-left-0 border-right-0"
-                  id="headingOne" data-toggle="collapse" data-target="#collapseOne">
-                  <div class="d-flex justify-content-between align-items-center pr-1">
-                    <span>- The Services We Provide</span>
-                    <i class="fas fa-chevron-down"></i>
-                  </div>
-              </div>
-              <div id="collapseOne" class="collapse show"
-                aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    <ul class="list-unstyled">
-                      <li><a href="#" class="py-2 d-block text-muted">Lorem ipsum</a></li>
-                      <li><a href="#" class="py-2 d-block text-muted">Lorem ipsum</a></li>
-                      <li><a href="#" class="py-2 d-block text-muted">Lorem ipsum</a></li>
-                      <li><a href="#" class="py-2 d-block text-muted">Lorem ipsum</a></li>
-                      <li><a href="#" class="py-2 d-block text-muted">Lorem ipsum</a></li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
+          <Related :product="product" @update="getProduct" />
         </div>
       </div>
     </div>
@@ -174,8 +144,13 @@
 </template>
 
 <script>
+import Related from '@/components/Related.vue';
+
 export default {
   name: 'Service',
+  components: {
+    Related,
+  },
   data() {
     return {
       product: {
@@ -235,6 +210,26 @@ export default {
             `Something is wrong. ${err}`,
             'danger');
         });
+      });
+    },
+
+    getCart() {
+      this.isLoading = true;
+
+      const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/ec/shopping`;
+
+      this.$http.get(api).then((res) => {
+        this.cart = res.data.data;
+        this.$bus.$emit('cartUpdate', {
+          cart: this.cart,
+        });
+
+        this.cartTotal = 0;
+        this.cart.forEach((item) => {
+          this.cartTotal += item.product.price * item.quantity;
+        });
+
+        this.isLoading = false;
       });
     },
   },

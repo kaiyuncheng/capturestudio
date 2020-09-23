@@ -1,6 +1,19 @@
 <template>
   <div class="page__services">
-    <loading :active.sync="isLoading" ></loading>
+    <loading :active.sync="isLoading">
+      <div class="loadingio-spinner-blocks-qb5ljn1p9ul">
+        <div class="ldio-t4qo1eyy1z">
+          <div style="left:22px;top:22px;animation-delay:0s"></div>
+          <div style="left:42px;top:22px;animation-delay:0.125s"></div>
+          <div style="left:62px;top:22px;animation-delay:0.25s"></div>
+          <div style="left:22px;top:42px;animation-delay:0.875s"></div>
+          <div style="left:62px;top:42px;animation-delay:0.375s"></div>
+          <div style="left:22px;top:62px;animation-delay:0.75s"></div>
+          <div style="left:42px;top:62px;animation-delay:0.625s"></div>
+          <div style="left:62px;top:62px;animation-delay:0.5s"></div>
+        </div>
+      </div>
+    </loading>
     <div class="heading">
       <img v-if="filterCategory === ''" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/Tvw45YwgP0yLQxSvv5aNHqXdaunqK0SukpvWyCneTjmVp9ahdxihd9OawLlRWkseiY0gQAHdLWHvBOn9erq8z2mbmjjbgnF6pijWznu7ZsGrdeaWLaTurPtIGPWgPlnF.jpeg" alt="">
       <img v-if="filterCategory === 'Wedding'" src="https://images.unsplash.com/photo-1541262350848-1fe9d17310eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
@@ -131,6 +144,7 @@ export default {
 
     addToCart(id, quantity = 1) {
       this.status.loadingItem = id;
+      this.isLoading = true;
 
       const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/ec/shopping`;
       const cart = {
@@ -145,6 +159,7 @@ export default {
           'Added to cart',
           'primary');
         this.getCart();
+        this.isLoading = false;
       }).catch((error) => {
         this.status.loadingItem = '';
 
@@ -154,6 +169,7 @@ export default {
             `Something is wrong. ${err}`,
             'danger');
         });
+        this.isLoading = false;
       });
     },
 

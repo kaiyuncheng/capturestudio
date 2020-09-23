@@ -1,6 +1,19 @@
 <template>
   <div class="section page__service">
-    <Loading :active.sync="isLoading" />
+    <loading :active.sync="isLoading">
+      <div class="loadingio-spinner-blocks-qb5ljn1p9ul">
+        <div class="ldio-t4qo1eyy1z">
+          <div style="left:22px;top:22px;animation-delay:0s"></div>
+          <div style="left:42px;top:22px;animation-delay:0.125s"></div>
+          <div style="left:62px;top:22px;animation-delay:0.25s"></div>
+          <div style="left:22px;top:42px;animation-delay:0.875s"></div>
+          <div style="left:62px;top:42px;animation-delay:0.375s"></div>
+          <div style="left:22px;top:62px;animation-delay:0.75s"></div>
+          <div style="left:42px;top:62px;animation-delay:0.625s"></div>
+          <div style="left:62px;top:62px;animation-delay:0.5s"></div>
+        </div>
+      </div>
+    </loading>
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-12">
@@ -32,7 +45,7 @@
           <div class="select__group">
 
             <select v-model="product.num" name class="session__select">
-              <option value="0" disabled selected>
+              <option value="0" disabled>
                 Select Sessions
               </option>
               <option v-for="num in 5" :key="num"  :value="num">
@@ -48,7 +61,7 @@
                 <span> $ {{ product.num * product.price }}</span>
             </div>
 
-            <button
+            <button v-if="product.num"
               type="button"
               class="button session__btn"
               @click="addToCart(product.id, product.num)">
@@ -184,6 +197,7 @@ export default {
     },
     addToCart(id, quantity = 1) {
       this.status.loadingItem = id;
+      this.isLoading = true;
 
       const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/ec/shopping`;
 
@@ -200,6 +214,7 @@ export default {
           'primary');
 
         this.getCart();
+        this.isLoading = false;
       }).catch((error) => {
         this.status.loadingItem = '';
 
@@ -210,6 +225,7 @@ export default {
             `Something is wrong. ${err}`,
             'danger');
         });
+        this.isLoading = false;
       });
     },
 

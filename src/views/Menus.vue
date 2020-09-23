@@ -16,7 +16,12 @@
           <h1><router-link to="/">Capture Studio</router-link></h1>
         </div>
         <ul class="search">
-          <li>
+          <li class="search__group">
+            <input
+                type="text"
+                class="search__input"
+                placeholder="Search"
+              />
             <a href="#">
               <i class="fas fa-search"></i>
             </a>
@@ -53,15 +58,26 @@
           </li>
 
           <ul class="nav__item hide admin">
-            <li><a href="#"><i class="fas fa-search"></i></a></li>
-            <li @click.prevent="openNav = !openNav"><router-link to="/login">
-            <i class="fas fa-user-circle"></i>
-            </router-link></li>
+            <li @click.prevent="openNav = !openNav">
+              <router-link to="/login">
+                <i class="fas fa-user-circle"></i>
+              </router-link>
+            </li>
           </ul>
           <ul class="nav__item hide icons">
             <li class="icon"><a href="https://github.com/kaiyuncheng"><i class="fab fa-facebook-square"></i></a></li>
             <li class="icon"><a href="https://github.com/kaiyuncheng"><i class="fab fa-instagram"></i></a></li>
             <li class="icon"><a href="https://github.com/kaiyuncheng"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+          <ul class="nav__item hide admin">
+            <li class="search__nav">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search"
+              />
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
           </ul>
         </ul>
       </div>

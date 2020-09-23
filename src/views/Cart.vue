@@ -1,24 +1,32 @@
 <template>
   <div class="section page__cart">
-    <loading :active.sync="isLoading" ></loading>
+    <loading :active.sync="isLoading">
+      <div class="loadingio-spinner-blocks-qb5ljn1p9ul">
+        <div class="ldio-t4qo1eyy1z">
+          <div style="left:22px;top:22px;animation-delay:0s"></div>
+          <div style="left:42px;top:22px;animation-delay:0.125s"></div>
+          <div style="left:62px;top:22px;animation-delay:0.25s"></div>
+          <div style="left:22px;top:42px;animation-delay:0.875s"></div>
+          <div style="left:62px;top:42px;animation-delay:0.375s"></div>
+          <div style="left:22px;top:62px;animation-delay:0.75s"></div>
+          <div style="left:42px;top:62px;animation-delay:0.625s"></div>
+          <div style="left:62px;top:62px;animation-delay:0.5s"></div>
+        </div>
+      </div>
+    </loading>
     <Process :process="1" />
     <div class="container">
       <div class="row">
         <div class="cart__empty col-md-12 col-12" v-if="!cart.length">
-              <h3>Your cart is empty.</h3>
-              <button
-                type="button"
-                class="button"
-                @click="continueShopping"
-            >
-              <i class="fas fa-eye mr-2"></i>
-              Continue Browsing
-            </button>
+          <h3>Your cart is empty.</h3>
+          <button type="button" class="button" @click="continueShopping">
+            <i class="fas fa-eye mr-2"></i>
+            Continue Browsing
+          </button>
         </div>
         <ul class="col-md-8 col-12" v-if="cart.length">
           <li class="row cart__title">
-            <div class="col-md-1 col-6">
-            </div>
+            <div class="col-md-1 col-6"></div>
             <div class="col-lg-6 col-md-5 col-12">
               <h5>Services</h5>
             </div>
@@ -30,12 +38,11 @@
             </div>
           </li>
           <li class="row cart__list" v-for="item in cart" :key="item.id">
-            <div class="col-md-1 col-12 list_btn"   @click="removeCartItem(item.product.id)">
+            <div class="col-md-1 col-12 list_btn" @click="removeCartItem(item.product.id)">
               <i class="fas fa-times"></i>
             </div>
             <div class="col-lg-6 col-md-5 col-12 list__name">
-              <img :src="`${item.product.imageUrl[1]}`"
-                alt="">
+              <img :src="`${item.product.imageUrl[1]}`" alt="" />
               <h5 class="">{{ item.product.title }}</h5>
             </div>
             <div class="col-lg-3 col-md-4 col-12 list_input">
@@ -44,42 +51,34 @@
                   <button
                     class="btn btn-outline-primary"
                     @click="updateQuantity(item.product.id, item.quantity - 1)"
-                    :disabled="item.quantity === 1">
-                      <i class="fas fa-minus"></i>
+                    :disabled="item.quantity === 1"
+                  >
+                    <i class="fas fa-minus"></i>
                   </button>
                 </div>
                 <input
                   type="text"
                   class="form-control text-center"
                   :value="item.quantity"
-                  @keyup.enter="updateQuantity(item.product.id, $event.target.value)"/>
+                  @keyup.enter="updateQuantity(item.product.id, $event.target.value)"
+                />
                 <div class="input-group-append">
                   <button
                     class="btn btn-outline-primary"
-                    @click="updateQuantity(item.product.id, item.quantity + 1)">
+                    @click="updateQuantity(item.product.id, item.quantity + 1)"
+                  >
                     <i class="fas fa-plus"></i>
                   </button>
                 </div>
               </div>
             </div>
-            <div class="col-md-2 col-12 list_price">
-              $ {{ item.product.price * item.quantity }}
-            </div>
+            <div class="col-md-2 col-12 list_price">$ {{ item.product.price * item.quantity }}</div>
           </li>
           <li class="cart__btn">
-            <button
-                  v-if="cart.length"
-                  type="button"
-                  class="button"
-                  @click="removeAllCartItem()"
-            >
+            <button v-if="cart.length" type="button" class="button" @click="removeAllCartItem()">
               <i class="far fa-trash-alt mr-2" /> Empty Cart
             </button>
-            <button
-                type="button"
-                class="button"
-                @click="continueShopping"
-            >
+            <button type="button" class="button" @click="continueShopping">
               <i class="fas fa-eye mr-2"></i>
               Continue Browsing
             </button>
@@ -88,44 +87,41 @@
 
         <div class="col-md-4 col-12" v-if="cart.length">
           <div class="cart__detail">
-              <h4>Order Detail</h4>
-              <div class="cart__subtotal">
-                <p>Subtotal</p>
-                <p>$ {{ cartTotal }}</p>
-              </div>
+            <h4>Order Detail</h4>
+            <div class="cart__subtotal">
+              <p>Subtotal</p>
+              <p>$ {{ cartTotal }}</p>
+            </div>
 
-              <div class="cart__discount"  v-if="coupon.enabled">
-                <p>{{ 100 - coupon.percent }} % OFF</p>
-                <p>- {{ (cartTotal * (100 - coupon.percent)) / 100 }}</p>
-              </div>
+            <div class="cart__discount" v-if="coupon.enabled">
+              <p>{{ 100 - coupon.percent }} % OFF</p>
+              <p>- {{ (cartTotal * (100 - coupon.percent)) / 100 }}</p>
+            </div>
 
-              <div class="input__discount">
-                <input v-model="coupon_code"
-                  type="text"
-                  placeholder="Enter Coupon Code">
-                <button class="button"   type="button" @click="addCoupon">
-                  <i class="fas fa-gift"></i>
-                </button>
-              </div>
-
-              <div class="discount__code">
-                  <p>Enter <strong>DISCOUNT10</strong>
-                  to get your first time experience 10%OFF.</p>
-              </div>
-
-              <div class="cart__final" v-if="!coupon.enabled">
-                <p>Total</p>
-                <p>${{ cartTotal }}</p>
-              </div>
-
-              <div class="cart__final" v-if="coupon.enabled">
-                <p>Total</p>
-                <p>${{ cartTotal * (coupon.percent / 100) }}</p>
-              </div>
-
-              <button type="button" class="detail__btn button" @click="nextStep">
-                <i class="fas fa-check mr-2"></i> Check Out
+            <div class="input__discount">
+              <input v-model="coupon_code" type="text" placeholder="Enter Coupon Code" />
+              <button class="button" type="button" @click="addCoupon">
+                <i class="fas fa-gift"></i>
               </button>
+            </div>
+
+            <div class="discount__code">
+              <p>Enter <strong>DISCOUNT10</strong> to get your first time experience 10%OFF.</p>
+            </div>
+
+            <div class="cart__final" v-if="!coupon.enabled">
+              <p>Total</p>
+              <p>${{ cartTotal }}</p>
+            </div>
+
+            <div class="cart__final" v-if="coupon.enabled">
+              <p>Total</p>
+              <p>${{ cartTotal * (coupon.percent / 100) }}</p>
+            </div>
+
+            <button type="button" class="detail__btn button" @click="nextStep">
+              <i class="fas fa-check mr-2"></i> Check Out
+            </button>
           </div>
         </div>
       </div>
@@ -250,9 +246,7 @@ export default {
             this.isLoading = false;
           } else {
             const { message } = error.response.data;
-
             this.$bus.$emit('message:push', `Something is wrong. ${message}`, 'danger');
-
             this.isLoading = false;
           }
         });

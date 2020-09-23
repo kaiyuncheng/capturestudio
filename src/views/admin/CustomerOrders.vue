@@ -1,6 +1,19 @@
 <template>
   <div class="Customer_orders container">
-    <Loading :active.sync="isLoading" />
+    <loading :active.sync="isLoading">
+      <div class="loadingio-spinner-blocks-qb5ljn1p9ul">
+        <div class="ldio-t4qo1eyy1z">
+          <div style="left:22px;top:22px;animation-delay:0s"></div>
+          <div style="left:42px;top:22px;animation-delay:0.125s"></div>
+          <div style="left:62px;top:22px;animation-delay:0.25s"></div>
+          <div style="left:22px;top:42px;animation-delay:0.875s"></div>
+          <div style="left:62px;top:42px;animation-delay:0.375s"></div>
+          <div style="left:22px;top:62px;animation-delay:0.75s"></div>
+          <div style="left:42px;top:62px;animation-delay:0.625s"></div>
+          <div style="left:62px;top:62px;animation-delay:0.5s"></div>
+        </div>
+      </div>
+    </loading>
     <h2>Order Test System</h2>
     <!-- 產品列表 -->
     <div class="row mt-4 text-left">

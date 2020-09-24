@@ -224,7 +224,6 @@ export default {
 
       this.$http.get(api).then((res) => {
         this.order = res.data.data;
-        console.log(this.order);
         this.isLoading = false;
       });
     },

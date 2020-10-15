@@ -1,11 +1,11 @@
-import Vue from 'vue'; // node_modules
+import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import 'bootstrap';
 import $ from 'jquery';
 
+// 左右Swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-// import style (>= Swiper 6.x)
 import 'swiper/swiper-bundle.css';
 
 // 驗證套件
@@ -20,14 +20,15 @@ import {
 // 規則檔案（ex: email...）
 import * as rules from 'vee-validate/dist/rules';
 // 語系檔案
-import en from 'vee-validate/dist/locale/en.json';
 // import zhTW from 'vee-validate/dist/locale/zh_TW.json';
+import en from 'vee-validate/dist/locale/en.json';
 
 import Loading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/vue-loading.css';
 
 import App from './App.vue';
 import router from './router';
+import './bus';
 
 Vue.config.productionTip = false;
 window.$ = $;
@@ -36,19 +37,13 @@ Vue.use(VueAxios, axios);
 Vue.use(Loading);
 Vue.component('Loading', Loading);
 
-Vue.use(VueAwesomeSwiper /* { default options with global component } */);
-
-// Bus
-// Message
-// vm.$bus.$emit('message:push', message, status);
-// message(String): 訊息內容
-// status(String): Alert 的樣式
-Vue.prototype.$bus = new Vue();
+Vue.use(VueAwesomeSwiper);
 
 // vee-validate
+// 所有驗證規則
 Object.keys(rules).forEach((rule) => {
   extend(rule, rules[rule]);
-}); // 所有驗證規則
+});
 configure({
   classes: {
     valid: 'is-valid',

@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Raleway:wght@200;400;500;600;800;900&display=swap');
 @import '~bootstrap/scss/functions';
-@import './variables';
+@import 'helpers/variables';
 @import '~bootstrap';
 
-@import 'mixin';
-@import 'reset';
-@import 'layout';
+@import 'helpers/mixin';
+@import 'helpers/reset';
+@import 'helpers/layout';
 
 // menus and admin dashboard
-@import 'menus';
+@import 'pages/menus';
 
 //pages
-@import 'index';
-@import 'about';
-@import 'services';
-@import 'service';
-@import 'galleries';
-@import 'contact';
-@import 'cart';
-@import 'login';
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/service';
+@import 'pages/galleries';
+@import 'pages/contact';
+@import 'pages/cart';
+@import 'pages/login';
 
 // components
-@import 'related';
-@import 'process';
-@import 'gotop';
-@import 'loading';
+@import 'components/related';
+@import 'components/process';
+@import 'components/gotop';
+@import 'components/loading';
 
 

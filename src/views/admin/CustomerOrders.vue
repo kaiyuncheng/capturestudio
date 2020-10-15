@@ -278,7 +278,7 @@
               <td class="align-middle">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <button
+                    <button type="button"
                       class="btn btn-outline-primary"
                       @click="updateQuantity(item.product.id, item.quantity - 1)"
                       :disabled="item.quantity === 1"
@@ -293,7 +293,7 @@
                     @keyup.enter="updateQuantity(item.product.id, $event.target.value)"
                   >
                   <div class="input-group-append">
-                    <button
+                    <button type="button"
                       class="btn btn-outline-primary"
                       @click="updateQuantity(item.product.id, item.quantity + 1)"
                     >
@@ -330,7 +330,7 @@
                     placeholder="Enter Coupon Code"
                   >
                   <div class="input-group-append">
-                    <button
+                    <button type="button"
                     class="btn btn-outline-primary"
                     @click="addCoupon"
                     >

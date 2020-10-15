@@ -41,9 +41,9 @@
           </div>
           <div class="team__member col-md-6 col-lg-3 col-12">
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1559852349-c9347670ff66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=784&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/PdqcPvi1XTPUP8FNj3mBhawWWBocmLpE9lPEs5D3S3hDUgCEYcSk7VZ5bDuKu7Z7vWWkujyLZBQRJWtDbTl0HicVKZ6R7jPQ1cupI4T08DIpIQG9jWuOiKDOrlCOOta1.jpeg" alt="James Cox">
             </div>
-            <h4> James Cox</h4>
+            <h4>James Cox</h4>
             <span>Founder & Photographer</span>
             <p>
               We aim to capture the essence of your best and translate it
@@ -56,17 +56,17 @@
               has worked with Capture
               Studio for 5 years. He is a professional weddings photographer.
             </p>
-            <h4> Kevin Lee</h4>
+            <h4>Kevin Lee</h4>
             <span>Photographer</span>
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/2jrJZcqTko5WyimNMiy0nyMkj8V4OPC560xipAd8puYcZfnimIz0wEETPoECMHuPaQyd4nf7gPkXdlnBZLu6bLDgQ6HTIdXBtS8YMPtxdY3N2sB1xSXtGa5dyGR5IkEn.jpeg" alt="Kevin Lee">
             </div>
           </div>
           <div class="team__member col-md-6 col-lg-3 col-12">
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1591201565097-554dd2a0b815?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/3yEgkoNncbzK9yCd1zvWP4zevjJfdWDwR7wokomSL4Tn4TifA5ekdoedUOUhaqdDXFfxJVg8vsNpEjyl5aZ5OY6Yb6uNdUOdaVIGw2oOg69bSjlXL2O670zVtLU2GuNm.jpeg" alt="Lauren Smith">
             </div>
-            <h4> Lauren Smith</h4>
+            <h4>Lauren Smith</h4>
             <span>Photographer</span>
             <p>
               Lauren is orginally from Amsterdam and
@@ -83,10 +83,10 @@
               Explicabo, obcaecati expedita totam, ad aut aliquid fuga, optio a
               minus dignissimos deleniti assumenda.
             </p>
-            <h4> Johnny Brown</h4>
+            <h4>Johnny Brown</h4>
             <span>Videographer</span>
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1561756639-e3ba20b38a5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/vqhbGVeFxm5aCCRAT7bOVzzOrKzg2brvJRzUmFqq3ozrQe0813DDg6QV17Q3SqPVls3DLiRDbszIAHAcTtpinvRATMteRst7klbX2C52r9ktiKJzJia0iJMsutDkKGIP.jpeg" alt="Johnny Brown">
             </div>
           </div>
         </div>

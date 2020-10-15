@@ -29,12 +29,6 @@
                 required
               />
             </div>
-            <!-- <div class="checkbox mb-3 text-left">
-            <label>
-              <input type="checkbox" value="remember-me" /> Remember me
-            </label>
-            </div> -->
-
             <button class="button" type="submit">
               SIGN IN
             </button>
@@ -84,28 +78,6 @@ export default {
           this.isLoading = false;
         });
     },
-
-    // signout() {
-    //   document.cookie = 'token=;expires=;';
-    //   console.log('token 已清除');
-    // },
-
-    // getData() {
-    //   // 取得 token 的 cookies（注意取得的時間點）
-    //   // 詳情請見：https://developer.mozilla.org/zh-CN/docs/Web/API/Document/cookie
-    //   this.token = document.cookie.replace(/(?:(?:^|.*;\s*)token\s*=\s*([^;]*).*$)|^.*$/, '$1');
-
-    //   // API
-    //   const api = `${process.env.VUE_APP_APIPATH}${process.env.VUE_APP_UUID}/admin/ec/products`;
-    //   this.$http.defaults.headers.common.Authorization = `Bearer ${this.token}`;
-
-    //   this.$http
-    //     .get(api)
-    //     .then((res) => {
-    //       this.products = res.data.data;
-    //       this.pagination = res.data.meta.pagination;
-    //     });
-    // },
   },
 };
 </script>

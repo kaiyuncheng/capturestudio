@@ -16,7 +16,7 @@
     </loading>
     <h2>PRODUCTS LIST</h2>
     <div class="text-right mt-4">
-        <button class="btn btn-primary" @click.prevent="openModal('new')">
+        <button type="button" class="btn btn-primary" @click.prevent="openModal('new')">
           <i class="fas fa-plus"></i>  Add new product
         </button>
     </div>
@@ -63,11 +63,12 @@
             <td>
               <div class="btn-group">
 
-                <button class="btn btn-outline-primary btn-sm" @click="openModal('edit', item)">
+                <button type="button"
+                class="btn btn-outline-primary btn-sm" @click="openModal('edit', item)">
                   <i class="fas fa-wrench"></i>    Edit
                 </button>
 
-                <button
+                <button type="button"
                   class="btn btn-outline-danger btn-sm"
                   @click="openModal('delete', item)"
                 >

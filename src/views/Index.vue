@@ -27,7 +27,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="carousel-img">
-            <img class="d-block w-100" src="https://images.unsplash.com/photo-1547948577-438c80482068?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+            <img class="d-block w-100" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/lp3NYVSbVTj0y9PQNoEzw9HUVLvoRHYCR4rhG54P0oWJiwOXCLzTyp5Tn7nDdUdFmSH23UyhFv8IFr83UBMHZyFmq3T2Xu6lBU0k5qHld1YUXi02JQMzKEpJKC2oN9ZG.jpeg" alt="Capture your best moments" />
           </div>
           <div class="carousel-txt">
             <h3>We capture your best moments.<span>- Capture Studio</span></h3>
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://images.unsplash.com/photo-1492176861288-6b481cfad893?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
+          <img class="d-block w-100" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/eaWOrVO9xNyMP5FH9bbNKoX3XJk95KTfD7bwNidlzuWnjojpYAnyhTUJGbZk9lwzOYSDS0cWy6IPXWzuuVRbFe9lBIRVEqtr4y5ETawnlWx1iQweGXclIDGbSYlHB20D.jpeg" alt="Capture your best moments" />
           <div class="carousel-txt">
             <h3>We record your memories of lifetime.
               <span>- Capture Studio</span>
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+          <img class="d-block w-100" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/nu6nScP4O3o0Avd5y9LOxJwdZfjaaAjOuqXKM3kyJkSMf4wmkpdJfQrYYz4b5Os20f3Rk6WV7kioOqz2BHVyXouHpikoItmdyf21lNA2V7vULsooDfVWPVl5SztsI9Ai.jpeg" alt="Capture your best moments" />
           <div class="carousel-txt">
             <h3>We record your memories of lifetime.
               <span>- Capture Studio</span>
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://images.unsplash.com/photo-1551966775-a4ddc8df052b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" />
+          <img class="d-block w-100" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/Ep8Csi5NkNUAC6vJVvpzXiBFGmqcwI0F6wvh7LXw8YvoTDvtBAc4FFD70vKH4d9nRdM28L7KEWDBkuNmdaFWuXrd1zOjoiA5HYxY09FXgrCeFptNTjEvFwMd2O7obJts.jpeg" alt="Capture your best moments" />
           <div class="carousel-txt">
             <h3>We capture your best moments.
               <span>- Capture Studio</span>
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Third slide" />
+          <img class="d-block w-100" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/QpiUy4ecjEcVrm3wp88342E1tXM13j1uLyDp2A8CUqEyPWbHK1drRQ87VPt7GrTI5xlWenUizBMtdzFfSKBtWIzUBdr0Dph1v2RMWSSzvPb0dMhc25dIPs0DZT3lQ02i.jpeg" alt="Capture your best moments" />
           <div class="carousel-txt">
             <h3>We capture your best memories with your love ones.
               <span>- Capture Studio</span>
@@ -119,7 +119,6 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img">
-              <!-- <img src="https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80" alt=""> -->
             </div>
           </div>
         </div>
@@ -134,9 +133,6 @@
             <h3>
               HERE, YOU ARE THE CENTER OF ATTENTION FOREVER.
             </h3>
-            <!-- <p>
-              We provide the best services and quality of photos.
-            </p> -->
           </div>
         </div>
       </div>
@@ -147,7 +143,7 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Wedding')">
-              <img src="https://images.unsplash.com/photo-1597685046918-cb86c4d730d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/QOHbxTWgDcLHfjsrj2CvCdgCRTl0udTnOuIRkOhsjmzRXBoAqTl5kzdtVAG3rGI3rKQGcgIprb6jae2aCzj0UUnKiDXirDBX9N5nXrFcBcbulGT6t4jFt231WPz4FTBT.jpeg" alt="WEDDING">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>WEDDING <i class="fas fa-angle-right"></i></span>
@@ -156,7 +152,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Family')">
-              <img src="https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/ChA9UIhXpSbkat9GYU8K52cUIZjWOjuKKJRsJxOa46Px9Wzu0K3FiBDfgmyv8f9dzXoCYw4DeU4AmmX9nf6ObcCsRk3Y0dtIvI2iydnv2T0RgCIuj24lXAZJU5PEUJcq.jpeg" alt="FAMILY">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>FAMILY <i class="fas fa-angle-right"></i></span>
@@ -165,7 +161,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Children')">
-              <img src="https://images.unsplash.com/photo-1524492188898-7e0f39d0ec03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/F7AvFxxlWWrO7fTZ8Vx8617Ae3hEoXAwSzgJWPKzwxsquZQrRGp8aDIlO3VisckWaLjaNBR4OBPrmWe6LoMN0VfJspSMYsgUVpWM8tM3km48jhvJD9AS4osxNYoxLy6h.jpeg" alt="CHILDREN">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>CHILDREN <i class="fas fa-angle-right"></i></span>
@@ -174,7 +170,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Maternity')">
-              <img src="https://images.unsplash.com/photo-1550791753-b14198adc434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/H77c7XHN17lQoelAXGzq2AkHa2B6kKyN5WcXejBmQLq9WyejAiDcuaRcQnwzwvG6hInWyRV1Dsg3FhEe0wpFytEwNg6he0HDxwuNmjGY0gkMSILHZyuGdpEd1a5SD6Rb.jpeg" alt="MATERNITY">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>MATERNITY<i class="fas fa-angle-right"></i></span>
@@ -183,7 +179,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Event')">
-              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/QZ0HBX101ZY0DNx7CG0c31QnybtsPRUC7q2oQUx7MY9uBIQm7ZoLTCMCPAafi24C13Wc4ZxUXfqNAuss6sj5tQsrZ7WGYGTGuOoM83c47nYMPMepTAoN54n8Th77dgAm.jpeg" alt="EVENT">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>EVENT<i class="fas fa-angle-right"></i></span>
@@ -192,7 +188,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Commercial')">
-              <img src="https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/abm8dc6kK1dak7QVKqctRSJeR7IYqz1UCksFnZ8Xvd9zsYHki9fmN7P4koYdecT8xu8S7u9U5sgpAewpu4D0yf6JeLNUTHDHFclz53hW2srkkN70ohSLYFafI9FB6hUe.jpeg" alt="COMMERCIAL">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>COMMERCIAL<i class="fas fa-angle-right"></i></span>
@@ -201,7 +197,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Portrait')">
-              <img src="https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/F09mbwysIWjVmNaczG7iXqDQBxgbLKI3epHqeKGDWObgf6rbVs7ODoi13UXPvEWCyqd5dmoK2GIzmsori0eULsq5c0glO00tGlhRin0Rzeutq8CYK3u4rq8ZPlJhBoCi.jpeg" alt="PORTRAIT">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>PORTRAIT<i class="fas fa-angle-right"></i></span>
@@ -210,7 +206,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="img" @click="goTo('Pet')">
-              <img src="https://images.unsplash.com/photo-1572200426105-138b932bba64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/VtJtqCTGpcFjNL2sTaO8GtXAHCuuqcM84slWSOoBkuymZZiCRPPSKSFVfWh2x39cYiGgQq3AP3fmYnjLM4ueXJ2cEZtXJHuexXtRhjuHMBHxiQZLfWE3D9y0zalQy0LF.jpeg" alt="PET">
               <div class="category">
                 <span>LEARN MORE</span>
                 <span>PET<i class="fas fa-angle-right"></i></span>
@@ -274,7 +270,7 @@
         <div class="carousel-item active">
           <router-link to="/galleries" class="row comment">
             <div class="comment__img col-10 col-md-3">
-              <img src="https://images.unsplash.com/photo-1541250848049-b4f7141dca3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/V0QWA5nDL77L09ZbCLguTdqKrOxAZfmOwGUQA0klT2axiRqHRFQlbsnuMIT6PmYpsSnAb6MK0Q6qrZ5v8L8uLxht2Uaj22ykfSonAqk9EkTx388WnzReeltjBJ6A4MW1.jpeg" alt="Amy & John">
               <span>Amy & John, London</span>
             </div>
             <div class="comment__txt col-10 col-md-7">
@@ -294,7 +290,7 @@
         <div class="carousel-item">
           <router-link to="/galleries" class="row comment">
             <div class="comment__img col-10 col-md-3">
-              <img src="https://images.unsplash.com/photo-1588979355313-6711a095465f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=642&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/itwwSrjhsS1zERPjut61IK7c5WndQvASv3R0ejJXg315sfUGtnec4aZIxdgGi6JWtIn3sXR42mgkoKJI3X9TZwLaH1BVNHVyUHkSaCblMbD7OBcsfVIwa28LzsF7exnG.jpeg" alt="Family Jones">
               <span>Family Jones , Hawaii</span>
             </div>
             <div class="comment__txt col-10 col-md-7">
@@ -315,7 +311,7 @@
         <div class="carousel-item">
           <router-link to="/galleries" class="row comment">
             <div class="comment__img col-10 col-md-3">
-              <img src="https://images.unsplash.com/photo-1542037179399-bbf09c7f9888?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/64OKAir5cOfMh6YWuFAWfajn7zRNAHU4xtIM0VYqSVe8VPgE7t0Aa03cq3LJ4RkXxRKdh3VrlU4QiwUIfVHLnvjSgjrkHb7BwoCMdN5yzK8HsohQzWUVl7bjFvBKcoqS.jpeg" alt="Mrs. Kimmel">
               <span>Mrs. Kimmel, Paris</span>
             </div>
             <div class="comment__txt col-10 col-md-7">
@@ -364,7 +360,7 @@
           </div>
           <div class="team__member col-md-6 col-lg-3 col-12">
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1559852349-c9347670ff66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=784&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/PdqcPvi1XTPUP8FNj3mBhawWWBocmLpE9lPEs5D3S3hDUgCEYcSk7VZ5bDuKu7Z7vWWkujyLZBQRJWtDbTl0HicVKZ6R7jPQ1cupI4T08DIpIQG9jWuOiKDOrlCOOta1.jpeg" alt="James Cox">
             </div>
             <h4> James Cox</h4>
             <span>Founder & Photographer</span>
@@ -382,12 +378,12 @@
             <h4> Kevin Lee</h4>
             <span>Photographer</span>
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/2jrJZcqTko5WyimNMiy0nyMkj8V4OPC560xipAd8puYcZfnimIz0wEETPoECMHuPaQyd4nf7gPkXdlnBZLu6bLDgQ6HTIdXBtS8YMPtxdY3N2sB1xSXtGa5dyGR5IkEn.jpeg" alt="Kevin Lee">
             </div>
           </div>
           <div class="team__member col-md-6 col-lg-3 col-12">
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1591201565097-554dd2a0b815?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/3yEgkoNncbzK9yCd1zvWP4zevjJfdWDwR7wokomSL4Tn4TifA5ekdoedUOUhaqdDXFfxJVg8vsNpEjyl5aZ5OY6Yb6uNdUOdaVIGw2oOg69bSjlXL2O670zVtLU2GuNm.jpeg" alt="Lauren Smith">
             </div>
             <h4> Lauren Smith</h4>
             <span>Photographer</span>
@@ -409,7 +405,7 @@
             <h4> Johnny Brown</h4>
             <span>Videographer</span>
             <div class="team__img">
-              <img src="https://images.unsplash.com/photo-1561756639-e3ba20b38a5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/vqhbGVeFxm5aCCRAT7bOVzzOrKzg2brvJRzUmFqq3ozrQe0813DDg6QV17Q3SqPVls3DLiRDbszIAHAcTtpinvRATMteRst7klbX2C52r9ktiKJzJia0iJMsutDkKGIP.jpeg" alt="Johnny Brown">
             </div>
           </div>
         </div>

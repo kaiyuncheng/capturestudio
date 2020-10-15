@@ -1,7 +1,7 @@
 $color-primary:#704e00;
-$color-primary08: #704e00e5;
-$color-primary06: #704e0095;
-$color-primary02: #704e0015;
+$color-primary08: rgba(112, 78, 0, 0.9);
+$color-primary06: rgba(112, 78, 0, 0.8);
+$color-primary02: rgba(112, 78, 0, 0.2);
 $color-secondary: #6c757d;
 $color-dark: #3e3e3e;
 $color-light: #cccccc;
@@ -72,17 +72,40 @@ span {
   display: inline-block;
   border: 1px solid $color-white;
   color: $color-white;
-  background: $color-primary06;
+  background: $color-primary08;
   font-family: 'Raleway';
   font-weight: 400;
   font-size: 0.8rem;
   font-style: normal;
   padding: 15px 20px;
   transition: all .3s ease-in-out;
+  opacity: 0.8;
   
 
   &:hover{
-    background: $color-primary08;
+    background: $color-primary;
+    color: $color-white;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.button-outline {
+  display: inline-block;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  background: $color-white;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-style: normal;
+  padding: 15px 20px;
+  transition: all .3s ease-in-out;
+
+
+  &:hover {
+    background: $color-primary;
     color: $color-white;
     transition: all .3s ease-in-out;
     cursor: pointer;

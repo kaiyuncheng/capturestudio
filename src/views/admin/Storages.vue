@@ -47,14 +47,14 @@
                     v-model="item.path"
                     type="text"
                   />
-                  <button
+                  <button type="button"
                   class="btn btn-primary"
                   @click.prevent="copyPath(item)"
                   >
                   <i class="far fa-copy"></i>  Copy Image Path
                   </button>
 
-                  <button
+                  <button type="button"
                   class="btn btn-outline-danger"
                   @click.prevent="openModel(item)"
                   >

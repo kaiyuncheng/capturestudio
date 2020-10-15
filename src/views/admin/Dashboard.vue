@@ -86,8 +86,6 @@ export default {
     checkLogin() {
       this.token = document.cookie.replace(/(?:(?:^|.*;\s*)token\s*=\s*([^;]*).*$)|^.*$/, '$1');
 
-      // Axios 預設值
-      this.$http.defaults.headers.common.Authorization = `Bearer ${this.token}`;
       const api = `${process.env.VUE_APP_APIPATH}auth/check`;
 
       this.$http
@@ -97,6 +95,8 @@ export default {
         // 登入沒有問題
           if (res.data.success) {
             this.checkSuccess = true;
+            // Axios 預設值
+            this.$http.defaults.headers.common.Authorization = `Bearer ${this.token}`;
           }
         })
         .catch(() => {

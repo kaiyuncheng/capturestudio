@@ -15,16 +15,16 @@
       </div>
     </loading>
     <div class="heading">
-      <img v-if="filterCategory === ''" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/Tvw45YwgP0yLQxSvv5aNHqXdaunqK0SukpvWyCneTjmVp9ahdxihd9OawLlRWkseiY0gQAHdLWHvBOn9erq8z2mbmjjbgnF6pijWznu7ZsGrdeaWLaTurPtIGPWgPlnF.jpeg" alt="">
-      <img v-if="filterCategory === 'Wedding'" src="https://images.unsplash.com/photo-1541262350848-1fe9d17310eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-      <img v-if="filterCategory === 'Family'" src="https://images.unsplash.com/photo-1521252517631-1a6549100bd1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
-      <img v-if="filterCategory === 'Children'" src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-      <img v-if="filterCategory === 'Maternity'" src="https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
-      <img v-if="filterCategory === 'Couple'" src="https://images.unsplash.com/photo-1474552028796-8d1a00327610?ixlib=rb-1.2.1&auto=format&fit=crop&w=1305&q=80" alt="">
-      <img v-if="filterCategory === 'Event'" src="https://images.unsplash.com/photo-1482731910308-31e96e5d1d28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-      <img v-if="filterCategory === 'Commercial'" src="https://images.unsplash.com/photo-1462690417829-5b41247f6b0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-      <img v-if="filterCategory === 'Portrait'" src="https://images.unsplash.com/photo-1556755211-4335bebdd699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80" alt="">
-      <img v-if="filterCategory === 'Pet'" src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+      <img v-if="filterCategory === ''" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/Tvw45YwgP0yLQxSvv5aNHqXdaunqK0SukpvWyCneTjmVp9ahdxihd9OawLlRWkseiY0gQAHdLWHvBOn9erq8z2mbmjjbgnF6pijWznu7ZsGrdeaWLaTurPtIGPWgPlnF.jpeg" alt="All">
+      <img v-if="filterCategory === 'Wedding'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/qrPIRw6IWUiWuwPeYiq4X7vXyROQSW7RToj8E2OnK8pz190704zEJpga5r6neu6UZn0qnJkv8rOxsUgCp41bJcLh3IWbmGIguQItiHatOxMDIXBVlgtytQSoslxecOdb.jpeg" alt="Wedding">
+      <img v-if="filterCategory === 'Family'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/tYajJqxG9V69O9qFMzHL1wLgZt81bJAqQBEO7y7b2YxaMEaAoXC23QSenuKfK1v6xnz26ASAQEgbA9lBEiWK3FvJJoSvKGCqhjc2O8ML5qNPb9BmkwwX1T8sTWCbEt8q.jpeg" alt="Family">
+      <img v-if="filterCategory === 'Children'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/0ie1aFzCLQYY7bUPRjPKPCKvuWdvp1a5iFBoC7UIgcPrvJ6zEqXE8AUZT1cdpwwmjZl2A25MNQ4o5AIkYx5p9ZsN8Wkh8mKF70qKSXh3Bk5net8dkXz44yy16BY9IbA7.jpeg" alt="Children">
+      <img v-if="filterCategory === 'Maternity'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/nu6nScP4O3o0Avd5y9LOxJwdZfjaaAjOuqXKM3kyJkSMf4wmkpdJfQrYYz4b5Os20f3Rk6WV7kioOqz2BHVyXouHpikoItmdyf21lNA2V7vULsooDfVWPVl5SztsI9Ai.jpeg" alt="Maternity">
+      <img v-if="filterCategory === 'Couple'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/lTUnOz8V3w8a9vP8OafmVQEwe7ojGmrGWnHWMvx1djRW6fHSRhg5oW0HwUlFyoFXeygFR4gl5qaPLoeyWlr3kszfUo8VNoLRETjjE4kzOlnHWQp6OgjCQ3JeL8N84W5q.jpeg" alt="Couple">
+      <img v-if="filterCategory === 'Event'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/wDMPsHy5fHeHzTGtJZcSkpaJnZ8YHSu2irfILbVxsKCmb9G3EG0nhB8TokoVsoFNcMtBp123v6GtmtGQR8NilpSvAnj8yiP0KUnWiMybtBO3oUmUIuR4SUR08xUbHj8h.jpeg" alt="Event">
+      <img v-if="filterCategory === 'Commercial'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/PL5WNzgUwDE8ydBElB3tYdFhxyzqdwgMhlBuqzTFrElc48ytkVcOB4TwKmFMM211e6opcCLFMyoyAmQosWZ3qWStv4P3YH3LHCOAzgoOJhUx0z6SY8BpYcIW6vjqwoH6.jpeg" alt="Commercial">
+      <img v-if="filterCategory === 'Portrait'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/T88hEF9IcHO2axATJG6s3cs22D4Y7QK8NhyGjSJmk2pSJMzd0g9lC3vxgtkwKE93qvZQS6osj1CQquFZaBJlNrIEhQVxnsPrJqtTfdymZ0R3CmtwjijpHvWuKMacYsF9.jpeg" alt="Portrait">
+      <img v-if="filterCategory === 'Pet'" src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/s7qjjRqQjptmvtPsDrZa3OA4zT1fV54s3rcDQRZOQ159cqODvf0uPfdLyr51jgQD9n6TwPwx05P6MlMMlGwGve6mFzbLYNWzy8qMpjfuBG1t6cLCFEUe0oElUEHQ96mx.jpeg" alt="Pet">
       <h3 class="heading__txt"> {{ filterCategory }} </h3>
     </div>
     <div class="container">
@@ -54,7 +54,7 @@
               :key="item.id"
               class="services__item col-md-12 mb-4">
               <a href="#" @click.prevent="goService(item)" class="item__img">
-                <img :src="`${item.imageUrl}`" alt="">
+                <img :src="`${item.imageUrl[0]}`" alt="Service image">
                 <div class="item__price">
                   <div class="more">MORE INFO</div>
                   <div class="price">
@@ -64,15 +64,17 @@
                   </div>
                 </div>
               </a>
-              <div class="item__cart" @click.prevent="addToCart(item.id)">
-                <span>Add to cart <i class="fas fa-plus"></i></span>
-              </div>
               <div class="item__info">
                 <span>- {{ item.category }}</span>
                 <a href="#" @click.prevent="goService(item)" class="item__title text-left">
                   <h2>{{ item.title }}</h2>
                 </a>
-                <p class="item__text" v-html="item.content" />
+                <div class="item__text">
+                  <p v-html="item.content" />
+                </div>
+                <div class="item__cart" @click.prevent="addToCart(item.id)">
+                <span>Add to cart <i class="fas fa-plus"></i></span>
+                </div>
               </div>
             </div>
             <Pagination class="ml-3" v-if="filterCategory === ''"
@@ -164,9 +166,9 @@ export default {
         this.status.loadingItem = '';
 
         const errorList = error.response.data.errors;
-        errorList.forEach((err) => {
+        errorList.forEach(() => {
           this.$bus.$emit('message:push',
-            `Something is wrong. ${err}`,
+            'This service has been added to cart.',
             'danger');
         });
         this.isLoading = false;

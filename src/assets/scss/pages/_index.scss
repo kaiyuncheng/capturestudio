@@ -112,7 +112,7 @@ height: 550px;
     text-align: right;
     width: auto;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80') no-repeat center center;
+    background: url('https://hexschool-api.s3.us-west-2.amazonaws.com/custom/2QYig3GVPAXUFJTFF0n5XzDbrKl6RJbIaEwNJH8YKqqsu95tEGDdhXRk6AwXx4LfQt8LpyNkrHvDBrAPeLtiIqEnBTsdHvfbAUngVVzd6qMx0JuRl6hd427MEdnjV1j5.jpeg') no-repeat center center;
     @include media-768 {
       height: 500px;
     }
@@ -153,7 +153,7 @@ height: 550px;
       bottom: 50px;
       left: 50px;
       text-align: left;
-      opacity: 0.6;
+      opacity: 0.8;
       z-index: 2;
       transition: all 0.2s ease-in-out;
       
@@ -193,7 +193,7 @@ height: 550px;
       }
 
       &:hover{
-        opacity: 0.9;
+        opacity: 1;
         transition: all 0.2s ease-in-out;
       }
     }
@@ -411,7 +411,7 @@ height: 550px;
     }
   }
 }
-
+// TEAM
 .team{
   padding: 100px 20px;
   text-align: right;
@@ -419,9 +419,11 @@ height: 550px;
   .team__member{
     text-align: center;
     transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
 
     @include media-768{
-      margin: 50px 0;
+      margin: 10px 0;
     }
     
 
@@ -437,11 +439,18 @@ height: 550px;
     p{
       text-align: left;
       margin-bottom: 20px;
+      @include media-768 {
+        order: 1;
+      }
     }
 
     .team__img {
       height: 300px;
       margin-bottom: 20px;
+
+      @include media-768 {
+        order: -1;
+      }
 
       img {
         width: 100%;
@@ -459,11 +468,11 @@ height: 550px;
   }
 }
 
-
+// SUBSCRIBE
 .subscribe {
   padding: 0;
   .subscribe__bg {
-    background: url("https://images.unsplash.com/photo-1462926795244-b273f8a5454f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1509&q=80")center center no-repeat;
+    background: url("https://hexschool-api.s3.us-west-2.amazonaws.com/custom/dc7Im3QDj8M49A5RQC4L9FsPmTRV0Y7sprZi0sQmqnojS95Yqz7loHDx8uelXsrIvRSEU36W69f6jHTAq1FER9fXEZOkp85hYLiXwpM8Ss1Lgasb4goBqxgq80Bw3KQm.jpeg") center center no-repeat;
     height: 500px;
     background-attachment: fixed;
     background-size: cover;

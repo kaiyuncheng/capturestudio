@@ -101,7 +101,7 @@
         v-if="order.paid === false"
         class="text-right"
       >
-        <button class="btn btn-danger">
+        <button type="button" class="btn btn-danger">
           Go To Payment
         </button>
       </div>
@@ -168,7 +168,7 @@
             </td>
             <td>
               <div class="btn-group btn-group-sm">
-                <button
+                <button  type="button"
                   class="btn btn-outline-primary"
                   :disabled="item.paid"
                   @click.prevent="getDetailed(item.id)"

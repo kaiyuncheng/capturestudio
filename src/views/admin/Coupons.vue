@@ -16,7 +16,7 @@
     </loading>
     <h2>COUPONS LIST</h2>
     <div class="text-right mt-4">
-      <button
+      <button type="button"
         class="btn btn-primary"
         @click="openCouponModal('created')"
       >
@@ -57,13 +57,13 @@
           </td>
           <td>
             <div class="btn-group">
-              <button
+              <button type="button"
                 class="btn btn-outline-primary btn-sm"
                 @click="openCouponModal('edit', item)"
               >
                 <i class="fas fa-wrench"></i>  Edit
               </button>
-              <button
+              <button type="button"
                 class="btn btn-outline-danger btn-sm"
                 @click="openCouponModal('delete', item)"
               >

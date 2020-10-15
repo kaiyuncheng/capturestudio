@@ -19,7 +19,7 @@
       <div class="row">
         <div class="cart__empty col-md-12 col-12" v-if="!cart.length">
           <h3>Your cart is empty.</h3>
-          <button type="button" class="button" @click="continueShopping">
+          <button type="button" class="button" @click="goPage('services')">
             <i class="fas fa-eye mr-2"></i>
             Continue Browsing
           </button>
@@ -48,7 +48,7 @@
             <div class="col-lg-3 col-md-4 col-12 list_input">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <button
+                  <button type="button"
                     class="btn btn-outline-primary"
                     @click="updateQuantity(item.product.id, item.quantity - 1)"
                     :disabled="item.quantity === 1"
@@ -63,7 +63,7 @@
                   @keyup.enter="updateQuantity(item.product.id, $event.target.value)"
                 />
                 <div class="input-group-append">
-                  <button
+                  <button type="button"
                     class="btn btn-outline-primary"
                     @click="updateQuantity(item.product.id, item.quantity + 1)"
                   >
@@ -75,10 +75,11 @@
             <div class="col-md-2 col-12 list_price">$ {{ item.product.price * item.quantity }}</div>
           </li>
           <li class="cart__btn">
-            <button v-if="cart.length" type="button" class="button" @click="removeAllCartItem()">
+            <button v-if="cart.length"
+            type="button" class="button-outline" @click="removeAllCartItem()">
               <i class="far fa-trash-alt mr-2" /> Empty Cart
             </button>
-            <button type="button" class="button" @click="continueShopping">
+            <button type="button" class="button-outline" @click="goPage('services')">
               <i class="fas fa-eye mr-2"></i>
               Continue Browsing
             </button>
@@ -119,7 +120,7 @@
               <p>${{ cartTotal * (coupon.percent / 100) }}</p>
             </div>
 
-            <button type="button" class="detail__btn button" @click="nextStep">
+            <button type="button" class="detail__btn button" @click="goPage('customer_info')">
               <i class="fas fa-check mr-2"></i> Check Out
             </button>
           </div>
@@ -154,6 +155,7 @@ export default {
 
       isLoading: false,
       fullPage: true,
+      page: '',
     };
   },
   created() {
@@ -252,11 +254,8 @@ export default {
         });
     },
 
-    continueShopping() {
-      this.$router.push('/services');
-    },
-    nextStep() {
-      this.$router.push('/customer_info');
+    goPage(page) {
+      this.$router.push(`/${page}`);
     },
   },
 

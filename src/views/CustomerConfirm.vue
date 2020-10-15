@@ -1,5 +1,19 @@
 <template>
   <div class="section page__confirm">
+    <loading :active.sync="isLoading">
+      <div class="loadingio-spinner-blocks-qb5ljn1p9ul">
+        <div class="ldio-t4qo1eyy1z">
+          <div style="left:22px;top:22px;animation-delay:0s"></div>
+          <div style="left:42px;top:22px;animation-delay:0.125s"></div>
+          <div style="left:62px;top:22px;animation-delay:0.25s"></div>
+          <div style="left:22px;top:42px;animation-delay:0.875s"></div>
+          <div style="left:62px;top:42px;animation-delay:0.375s"></div>
+          <div style="left:22px;top:62px;animation-delay:0.75s"></div>
+          <div style="left:42px;top:62px;animation-delay:0.625s"></div>
+          <div style="left:62px;top:62px;animation-delay:0.5s"></div>
+        </div>
+      </div>
+    </loading>
     <Process :process="3" />
     <div class="container">
       <div class="row">
@@ -72,7 +86,7 @@
                     </div>
                 </li>
                 <li class="cart__btn">
-                  <button type="button" class="button" @click="goBack">
+                  <button type="button" class="button-outline" @click="goBack">
                     <i class="fas fa-chevron-left mr-2"></i> Back
                   </button>
                   <button type="submit" class="button" v-if="order.paid === false">
@@ -105,6 +119,7 @@ export default {
       orders: [],
       orderId: '',
       isLoading: false,
+      fullPage: true,
     };
   },
   created() {

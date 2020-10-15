@@ -68,26 +68,7 @@
               Add To Cart
               <i class="fas fa-plus"></i>
             </button>
-
           </div>
-
-          <!-- <div class="">
-            <div
-              v-if="product.num"
-              class="text-muted text-nowrap mr-3"
-            >
-              Total
-              <strong>$ {{ product.num * product.price }}</strong>
-            </div>
-            <button
-              type="button"
-              class="button"
-              @click="addToCart(product.id, product.num)"
-            >
-              Add To Cart
-              <i class="fas fa-plus"></i>
-            </button>
-          </div> -->
         </div>
 
         <div class="col-12">
@@ -220,9 +201,9 @@ export default {
 
         const errorList = error.response.data.errors;
 
-        errorList.forEach((err) => {
+        errorList.forEach(() => {
           this.$bus.$emit('message:push',
-            `Something is wrong. ${err}`,
+            'This service has been added to cart.',
             'danger');
         });
         this.isLoading = false;

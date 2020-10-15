@@ -17,7 +17,7 @@
         </div>
         <div class="col-12 col-md-10">
             <a href="#" class="img">
-              <img src="https://images.unsplash.com/photo-1551963071-f21314365855?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/Ze1Siisu1hvdBztGkJoSLDtaYR0hEibhCgqNT1oqeYo62wSYqwWdyfCdLprqv8K7frz5fK17KKoZDCdT4S6ny2Qc2x0OLzrMbD1zmqVfuGrisncEqz8LDcV2yvbiJ0tT.jpeg" alt="SIRENA & ERIC">
               <div class="client">
                 <span>WEDDING <i class="fas fa-angle-right"></i> SIRENA & ERIC </span>
               </div>
@@ -25,19 +25,19 @@
         </div>
         <div class="col-12 col-md-7">
             <a href="#" class="img">
-              <img src="https://images.unsplash.com/photo-1551963319-13ff32a5acd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/Y8WmjPBBnSDTAnqPbHaMwDlnFQiUwXJ9xrSDeYG2X84cWe7NiB92OEOQKyPP0yXdm2E1nDfVINjE9LRMqUVE5TjDzhWrAp9M2LOCYUEFWsm9VmrVdx4k0PxCJBDAUxub.jpeg" alt="SIRENA & ERIC">
             </a>
         </div>
         <div class="col-12 col-md-5">
           <a href="#" class="img img_special_1">
-              <img src="https://images.unsplash.com/photo-1551963696-8404c9c7b9ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/3LGuPQysFyV7K27p3UIzZeRm8QaO5Z1d2pMR1wtvnnSA79zgpmJfrueEvFGsDS1ZMqMOnTPlL92pgz5SLYFylJXJtdEakKGqkBsoTMOxLSMHaikPVODQ27dY0bu27kwF.jpeg" alt="SIRENA & ERIC">
             </a>
         </div>
       </div>
       <div class="row client__group">
         <div class="col-12 col-md-9">
             <a href="#" class="img img__lg img_special_2">
-              <img src="https://images.unsplash.com/photo-1517051436577-ecefc47f36a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/kXtD6698uE3OjxSx4ma9MKQsfIgoNBPWsfe1LxDDqNQDiNq2McHcMM97JCKAKHYHhCkzweTG4ZB23gMUTINymXu0zx60Uqs9Eyq5NU9vwjBfwTF9PMr3wgc9sUgkatNx.jpeg" alt="SIRENA & ERIC">
               <div class="client">
                 <span>WEDDING <i class="fas fa-angle-right"></i> SIRENA & ERIC </span>
               </div>
@@ -49,12 +49,12 @@
         </div>
         <div class="col-12 col-md-4">
           <a href="#" class="img">
-            <img src="https://images.unsplash.com/photo-1548765063-314376d48c70?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="">
+            <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/SvuOxP7UTAk6OXSnTbc4K4A2dlY4rYLRuawtKn9gBZ9mEG40QKAEjsLxM7p8KxfvVU9yUmH7i1skagvBNx7ZWcApYkMsPPIgSqLeSBZ1UGkfq0EIAHEG7tmGNpLNrqKD.jpeg" alt="SIRENA & ERIC">
           </a>
         </div>
         <div class="col-12 col-md-7">
             <a href="#" class="img img_special_3">
-              <img src="https://images.unsplash.com/photo-1529636475857-2ee7c59e2fdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/EyabSAWkY0qRR8M3tWU24skncJm1p7EQs5wBGHdTEQMTyjzsrNXQDt26FOKKDlouEYUprhBcDxJZkfeuOtegvjRHW3JnjF2UbyPjuvnXZwncWQ2wMZu7rf8b6xcNlRhD.jpeg" alt="SIRENA & ERIC">
             </a>
         </div>
       </div>
@@ -62,7 +62,7 @@
       <div class="row client__group">
         <div class="col-12 col-md-6">
             <a href="#" class="img img_special_4">
-              <img src="https://images.unsplash.com/photo-1523307414180-45a23ef5d1f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/NY3AadggkvVJ2n7bVoGukNZHXOnh9j22037H4dBzPDzX4DOCmYEFqdUb1HhCQ3licrtzCDbHcbswtZ7ltuUz4p7rl7kj4VgPeTJFZ0LbtPjQhXxk1JL1LDB6ZLvPKspy.jpeg" alt="MAHID FAMILY">
               <div class="client">
                 <span>MATERNITY & FAMILY <i class="fas fa-angle-right"></i> MAHID FAMILY </span>
               </div>
@@ -71,7 +71,7 @@
         </div>
         <div class="col-12 col-md-4">
           <a href="#" class="img img_special_5">
-              <img src="https://images.unsplash.com/photo-1523308413200-8ab4ef0f1e0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/VAwdpBXHuiNC3V8NAah467FnoIcaDegB4pts62b24VBAa3L9P4TBLQzrFYxtEpK35VK0RJ9vUe9s5f8kM2n3LD07nuTkPzdArZhINFzm9TBKZvdG3fJSHM9shOqeamZs.jpeg" alt="MAHID FAMILY">
             </a>
         </div>
         <div class="col-12 col-md-2">
@@ -80,7 +80,7 @@
         </div>
         <div class="col-12 col-md-9">
             <a href="#" class="img img__lg">
-              <img src="https://images.unsplash.com/photo-1523308548892-1979ef64628c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/jfXi9T22xK8QboeblNNSiXkVH8jxlcY8yqHIPqOPd1QBhg66WNH393k4h8peR7tX8shDUdQLFIuRa28nS1AJJAy16MuW0ACAPkmmBIyGmTB7sH9ygn3nmaZC3drX7r5x.jpeg" alt="MAHID FAMILY">
             </a>
         </div>
       </div>
@@ -88,7 +88,7 @@
       <div class="row client__group">
         <div class="col-12 col-md-9">
             <a href="#" class="img img_special_2">
-              <img src="https://images.unsplash.com/photo-1556918108-baaafd6a2010?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/w053Cj8X2GahZkENRwXRQ8zu9kVET9u0CffxpGKtZHL8pidooZgWdv1DfQZ2cTQEyoE81AHtlS65iwMDVYczGbgu4BP62Fgye6zUkXF9MoMuJ9oNzGt8kGQit9FdMzYS.jpeg" alt="SIRENA & ERIC">
               <div class="client">
                 <span>WEDDING <i class="fas fa-angle-right"></i> SIRENA & ERIC </span>
               </div>
@@ -100,20 +100,12 @@
         </div>
         <div class="col-12 col-md-4">
           <a href="#" class="img img_special_6">
-            <img src="https://images.unsplash.com/photo-1597685046918-cb86c4d730d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
-            <div class="category">
-              <span>LEARN MORE</span>
-              <span>WEDDINGS <i class="fas fa-angle-right"></i></span>
-            </div>
+            <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/TMtkWLBdNwWn4pPVRjQnFxsE5ouHMFZtobH5FNhU8hGObH632WK9RN8PzW9IpNOZB5ZXpxtgvOmTgBdYkHKw43DgchGfr00o4ScrgZaoUzW2jUpDZUVabP4f1KgXUZfi.jpeg" alt="SIRENA & ERIC">
           </a>
         </div>
         <div class="col-12 col-md-7">
             <a href="#" class="img">
-              <img src="https://images.unsplash.com/photo-1589727549629-87f7073149b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
-              <div class="category">
-                <span>LEARN MORE</span>
-                <span>WEDDINGS <i class="fas fa-angle-right"></i></span>
-              </div>
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/6zdOzTzQlLT4Wp2lpRqobxmEnB8B69K9M4jnaeK0NDAM1cGgxuLsvVGjoL9Aytel62FKshq6VI2wUIj9xBhvTNHifG8ng2mJHERfFODyhfSDPTtBYTZIQhFf509uLPej.jpeg" alt="SIRENA & ERIC">
             </a>
         </div>
       </div>
@@ -123,7 +115,7 @@
         </div>
         <div class="col-12 col-md-10">
             <a href="#" class="img img_special_4">
-              <img src="https://images.unsplash.com/photo-1504151864552-57020b6b876b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/zr8z6PsbDasYEx0HqkWDSCpO9046BHl8mAaiWlh1aKELa1cFFIrmRQb4YpteO5xJdCcsOvaHvYdtVEt9j8XMD0mU02u9Vh559FHTrvlcpWwfPF3KzoJ2qBbnXFHTONY1.jpeg" alt="LITTLE ZOEY">
               <div class="client">
                 <span>CHILDREN <i class="fas fa-angle-right"></i> LITTLE ZOEY </span>
               </div>
@@ -131,12 +123,12 @@
         </div>
         <div class="col-12 col-md-7">
             <a href="#" class="img img_special_4">
-              <img src="https://images.unsplash.com/photo-1504151671506-6312eceb0f18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/e7TpMmaEHS3xw1IWHgiFxh3qgHEG1r3CcSKYFQemms3qeDM7nU5sqkSIRj5AoYuqD6IcUghnwTEodoWuMxCdpAlqRErPkZ2mP5Noap1OQuvO0y1KrgG2bIpHxAeyfSdW.jpeg" alt="LITTLE ZOEY">
             </a>
         </div>
         <div class="col-12 col-md-5">
           <a href="#" class="img img_special_7">
-              <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1250&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/FKnsU4pojt6QktJfroqR8zcVXp38EDVnZBNDY3j9tq1KuH101UWDGJpP7RNllEb2UPCrHO2AYayogmgC0DulqRyh5CE4Huyi1KEyx6CHmjnsgYN0pEuinZQEDCIhOSuL.jpeg" alt="LITTLE ZOEY">
             </a>
         </div>
       </div>
@@ -144,7 +136,7 @@
       <div class="row client__group">
         <div class="col-12 col-md-9">
             <a href="#" class="img img__lg img_special_4">
-              <img src="https://images.unsplash.com/photo-1466314760659-7a0975a51304?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/UkEsv4DPndT8WPIbLWC0Z4qtlFspjFHt7o0iubia16A60kaoVRl11PHth1C8P5GKEtZBqrTK45jCzgTKjLMigm3Mgj2pYC1mqO9OTuC2HiO1i6aABeBOGHI9eZIGDG4w.jpeg" alt="JENIFFER">
               <div class="client">
                 <span>PORTRAIT <i class="fas fa-angle-right"></i> JENIFFER </span>
               </div>
@@ -156,12 +148,12 @@
         </div>
         <div class="col-12 col-md-4">
           <a href="#" class="img img_special_4">
-            <img src="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="">
+            <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/EbvNtr9tS7E8fUbgPHLiFWLqVPb2t3cGxI8hPJ0Snxr8KctJO73c5CWTictPZezQnyWzknDQej1a8AOA2NOgtyX4esc8usUN5eCut9CLzonSNzfZBHKlaz1eD0fyUlEa.jpeg" alt="JENIFFER">
           </a>
         </div>
         <div class="col-12 col-md-7">
             <a href="#" class="img img_special_3">
-              <img src="https://images.unsplash.com/photo-1444913220552-fe31fed9c5bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/MP2K0Thbch2IXf9UtHpkjxaDvRsyTbdxq7jhdTJXHSw8r32BYABowPKFpLFzuneIO6XdGlrXv9DotAv7Ps1IOK1N1gx9YAvGdRczcF7JXTrwHn0DTy7DK7etHLfSZFsG.jpeg" alt="JENIFFER">
             </a>
         </div>
       </div>
@@ -169,7 +161,7 @@
       <div class="row client__group">
         <div class="col-12 col-md-7">
             <a href="#" class="img img_special_4">
-              <img src="https://images.unsplash.com/photo-1578857182382-c6f9c4dc5bad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/SnkrrfDmZ15tzqQAEEq7hkFsvHEVioxOI6CsUbsQjhGxKfqNnWmI2YyP1Q4GAdF3khUblK27q7TIO37xfsJ4gqLIfspjiD5m5SXHq1A0LrzWcsjvqrQcnu4m8YmLzQXN.jpeg" alt="ROSCOE">
               <div class="client">
                 <span>PET <i class="fas fa-angle-right"></i> ROSCOE </span>
               </div>
@@ -178,14 +170,14 @@
         </div>
         <div class="col-12 col-md-5">
           <a href="#" class="img img_special_5">
-              <img src="https://images.unsplash.com/photo-1554079576-2c60630c343a?ixlib=rb-1.2.1&auto=format&fit=crop&w=746&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/NT86mF7VIEeAXHHiAUG6zQlKSojeruluXTXnrwhUHEUIPRmA4LZfxdRThtfFqcx67OtF1jUGNFUjmE5ztML9LFwNS33amjfk9bjKV4EcWBSWBXXe51frGIx9C0y5ywKx.jpeg" alt="ROSCOE">
           </a>
         </div>
         <div class="col-12 col-md-2">
         </div>
         <div class="col-12 col-md-10">
             <a href="#" class="img img__lg img_special_7">
-              <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80" alt="">
+              <img src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/QR9bkkgEG5VW8Mr0OTSyINMeRH7BYA6jegO8lXqRS0ozi0e8OQo6k2zo4Y1FeMVyHi0JUFOa9So44HYEaK9OVYVuTHmbYbneXoynnwRXr4WTgEi4vJAF9RJPBWUKZBFD.jpeg" alt="ROSCOE">
             </a>
         </div>
       </div>

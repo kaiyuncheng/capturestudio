@@ -23,7 +23,7 @@
             {{ item.category }}
           </div>
           <div style="height: 300px; background-size: cover; background-position: center"
-          :style="{backgroundImage: `url(${item.imageUrl})`}">
+          :style="{backgroundImage: `url(${item.imageUrl[0]})`}">
           </div>
 
           <div class="card-body">

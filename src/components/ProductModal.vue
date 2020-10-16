@@ -10,8 +10,8 @@
       <div class="modal-content border-0">
         <div class="modal-header bg-dark text-white">
           <h5 id="exampleModalLabel" class="modal-title">
-            <span v-if="isNew">Add new product</span>
-            <span v-else>Editing {{ tempProduct.title }} </span>
+            <div v-if="isNew">Add new product</div>
+            <div v-else>Editing {{ tempProduct.title }} </div>
           </h5>
           <button
             type="button"
@@ -19,7 +19,7 @@
             data-dismiss="modal"
             aria-label="Close"
           >
-            <span aria-hidden="true">&times;</span>
+            <i class="fas fa-times"></i>
           </button>
         </div>
 

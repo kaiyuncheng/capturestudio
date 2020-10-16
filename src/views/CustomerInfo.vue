@@ -184,12 +184,6 @@ export default {
       if (this.coupon.enabled) {
         order.coupon = this.coupon.code;
       }
-
-      this.$validator.validate().then((result) => {
-        if (!result) {
-          this.$bus.$emit('message:push', 'This service has been added to cart.', 'danger');
-        }
-      });
       this.$http
         .post(api, order)
         .then((res) => {

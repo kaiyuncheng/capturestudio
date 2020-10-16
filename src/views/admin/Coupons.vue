@@ -98,7 +98,7 @@
               data-dismiss="modal"
               aria-label="Close"
             >
-              <span aria-hidden="true">&times;</span>
+              <i class="fas fa-times"></i>
             </button>
           </div>
           <div class="modal-body">

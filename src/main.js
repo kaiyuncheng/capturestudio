@@ -8,6 +8,9 @@ import $ from 'jquery';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/swiper-bundle.css';
 
+import CoolLightBox from 'vue-cool-lightbox';
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css';
+
 // 驗證套件
 import {
   ValidationObserver,
@@ -37,6 +40,7 @@ Vue.use(VueAxios, axios);
 Vue.use(Loading);
 Vue.component('Loading', Loading);
 
+Vue.use(CoolLightBox);
 Vue.use(VueAwesomeSwiper);
 
 // vee-validate
